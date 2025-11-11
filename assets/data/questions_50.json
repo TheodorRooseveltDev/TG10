@@ -13,7 +13,7 @@
     "id": 2,
     "category": "international_road_signs",
     "questionText": "This octagonal red sign means:",
-    "imagePath": "assets/images/road_signs/sign_stop.png",
+    "imagePath": "assets/images/road_signs/sign_stop.webp",
     "options": ["Yield to traffic", "Complete stop required", "Slow down", "No parking"],
     "correctIndex": 1,
     "explanation": "The octagon shape is unique to STOP signs worldwide. Drivers must come to a complete stop before proceeding.",

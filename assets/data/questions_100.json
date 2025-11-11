@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "category": "international_road_signs",
+    "questionText": "What does this red triangular sign with an exclamation mark mean?",
+    "imagePath": "assets/images/road_signs/sign_road_works.png",
+    "options": ["No entry", "General warning/danger ahead", "Stop required", "Speed limit"],
+    "correctIndex": 1,
+    "explanation": "A red triangle with an exclamation mark is the universal symbol for 'general warning' - alerting drivers to potential hazards ahead.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "category": "international_road_signs",
+    "questionText": "This octagonal red sign means:",
+    "imagePath": "assets/images/road_signs/sign_stop.png",
+    "options": ["Yield to traffic", "Complete stop required", "Slow down", "No parking"],
+    "correctIndex": 1,
+    "explanation": "The octagon shape is unique to STOP signs worldwide. Drivers must come to a complete stop before proceeding.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "category": "international_road_signs",
+    "questionText": "What does this circular blue sign with a white arrow pointing right mean?",
+    "imagePath": "assets/images/road_signs/sign_turn_right.png",
+    "options": ["Turn right recommended", "Turn right mandatory", "Right lane only", "Exit on right"],
+    "correctIndex": 1,
+    "explanation": "Blue circular signs with white arrows indicate mandatory directions. You MUST turn right at this intersection.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "category": "international_road_signs",
+    "questionText": "This red circle with a white horizontal bar means:",
+    "imagePath": "assets/images/road_signs/sign_no_entry.png",
+    "options": ["One way street", "No entry for all vehicles", "Road closed ahead", "Do not enter"],
+    "correctIndex": 1,
+    "explanation": "A red circle with a white bar is the international 'No Entry' sign - absolutely no vehicles allowed.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "category": "international_road_signs",
+    "questionText": "What does this sign with a cross symbol indicate?",
+    "imagePath": "assets/images/road_signs/sign_priority.png",
+    "options": ["Hospital nearby", "Priority road", "Railroad crossing", "Church zone"],
+    "correctIndex": 1,
+    "explanation": "This sign indicates you are on a priority road. Vehicles on side roads must yield to you.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "category": "international_road_signs",
+    "questionText": "This triangular sign with two children pictogram means:",
+    "imagePath": "assets/images/road_signs/sign_children.png",
+    "options": ["Playground area", "School zone - reduce speed", "Children crossing allowed", "Family parking"],
+    "correctIndex": 1,
+    "explanation": "Children pictogram signs warn of school zones. Drivers must reduce speed and watch for children crossing.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "category": "international_road_signs",
+    "questionText": "What does this circular sign with a red border and number '50' mean?",
+    "imagePath": "assets/images/road_signs/sign_speed_50.png",
+    "options": ["Minimum speed 50", "Maximum speed 50 km/h", "Road number 50", "Distance 50km"],
+    "correctIndex": 1,
+    "explanation": "Numbers inside a red circle indicate maximum speed limits. This sign means you cannot exceed 50 km/h.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "category": "international_road_signs",
+    "questionText": "This triangular warning sign shows a car skidding. What does it warn about?",
+    "imagePath": "assets/images/road_signs/sign_slippery.png",
+    "options": ["Sharp curve ahead", "Slippery/icy road conditions", "No skidding zone", "Tire check required"],
+    "correctIndex": 1,
+    "explanation": "A skidding car symbol warns that road conditions may be slippery due to ice, rain, or loose gravel.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "category": "international_road_signs",
+    "questionText": "What does this circular blue sign with a bicycle pictogram mean?",
+    "imagePath": "assets/images/road_signs/sign_bicycle.png",
+    "options": ["Bicycles prohibited", "Bicycle lane - cyclists only", "Bicycle parking", "Watch for cyclists"],
+    "correctIndex": 1,
+    "explanation": "Blue circular signs are mandatory. This designates a bicycle-only path where motor vehicles are not allowed.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "category": "international_road_signs",
+    "questionText": "This red triangle with a deer/animal silhouette warns of:",
+    "imagePath": "assets/images/road_signs/sign_animals.png",
+    "options": ["Zoo nearby", "Wild animals may cross", "Hunting area", "Farm animals only"],
+    "correctIndex": 1,
+    "explanation": "Animal crossing signs warn drivers that wild animals frequently cross the road in this area. Reduce speed and stay alert.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "category": "right_of_way_priority",
+    "questionText": "At a 4-way intersection with no signs or signals, who has right of way?",
+    "imagePath": null,
+    "options": ["The largest vehicle", "The vehicle on the right", "The first vehicle to arrive", "The fastest vehicle"],
+    "correctIndex": 1,
+    "explanation": "In most countries, when there are no signs, the vehicle approaching from your RIGHT has priority. Always yield to the right.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "category": "right_of_way_priority",
+    "questionText": "You're turning left at an intersection. Who must you yield to?",
+    "imagePath": null,
+    "options": ["Only vehicles on your left", "Oncoming traffic and pedestrians", "No one - you have priority", "Only emergency vehicles"],
+    "correctIndex": 1,
+    "explanation": "When turning left, you must always yield to oncoming straight traffic AND any pedestrians crossing your path.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "category": "right_of_way_priority",
+    "questionText": "In a roundabout, who has the right of way?",
+    "imagePath": null,
+    "options": ["Vehicles entering", "Vehicles already in the circle", "Largest vehicles", "Emergency vehicles only"],
+    "correctIndex": 1,
+    "explanation": "Traffic already circulating in the roundabout ALWAYS has priority. Entering vehicles must yield and wait for a gap.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "category": "right_of_way_priority",
+    "questionText": "An emergency vehicle with sirens and lights is approaching from behind. What should you do?",
+    "imagePath": null,
+    "options": ["Speed up to clear the way", "Pull to the right and stop", "Continue at same speed", "Change lanes left"],
+    "correctIndex": 1,
+    "explanation": "When emergency vehicles approach with sirens/lights, pull to the RIGHT side of the road and STOP until they pass.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "category": "right_of_way_priority",
+    "questionText": "Two vehicles arrive at an uncontrolled T-intersection at the same time. Who yields?",
+    "imagePath": null,
+    "options": ["The vehicle on the through road has priority", "The vehicle turning has priority", "Whoever honks first", "The larger vehicle"],
+    "correctIndex": 0,
+    "explanation": "At T-intersections, traffic on the 'through' road (the top of the T) has priority. Vehicles on the stem must yield.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "category": "right_of_way_priority",
+    "questionText": "You arrive at a STOP sign at the same time as another vehicle to your right. Who goes first?",
+    "imagePath": null,
+    "options": ["You do", "The vehicle on the right", "Whoever stops first", "Both go together"],
+    "correctIndex": 1,
+    "explanation": "When arriving simultaneously at stop signs, yield to the vehicle on your RIGHT. They have the right of way.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "category": "right_of_way_priority",
+    "questionText": "A pedestrian is crossing the street outside of a crosswalk. Do you have to stop?",
+    "imagePath": null,
+    "options": ["No, pedestrians must use crosswalks", "Yes, pedestrians always have right of way", "Only in residential areas", "Only if it's a child"],
+    "correctIndex": 1,
+    "explanation": "Pedestrians ALWAYS have right of way, even when crossing illegally. You must stop and let them cross safely.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "category": "right_of_way_priority",
+    "questionText": "You're on a priority road (marked with priority sign). Who must yield at the next intersection?",
+    "imagePath": null,
+    "options": ["You must yield", "Vehicles on side roads must yield to you", "Everyone yields equally", "Only buses must yield"],
+    "correctIndex": 1,
+    "explanation": "Priority road signs mean YOU have priority. Vehicles entering from side roads must yield to you.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 19,
+    "category": "right_of_way_priority",
+    "questionText": "At a merging lane (zipper merge), what is the proper procedure?",
+    "imagePath": null,
+    "options": ["Stop completely before merging", "Vehicles take turns merging one-by-one", "Speed up to get ahead", "Wait for all traffic to clear"],
+    "correctIndex": 1,
+    "explanation": "Zipper merge: vehicles from each lane take turns merging alternately, like a zipper. This keeps traffic flowing smoothly.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 20,
+    "category": "right_of_way_priority",
+    "questionText": "You're making a right turn on red (where legal). Who must you yield to?",
+    "imagePath": null,
+    "options": ["No one", "All pedestrians and cross traffic", "Only vehicles from the left", "Only emergency vehicles"],
+    "correctIndex": 1,
+    "explanation": "Right-on-red: you must come to COMPLETE stop, then yield to ALL pedestrians and cross traffic before proceeding.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 21,
+    "category": "lane_markings",
+    "questionText": "What does a solid white line on your side paired with a dashed line on the other side mean?",
+    "imagePath": null,
+    "options": ["You can pass anytime", "You cannot cross, but oncoming traffic can", "Emergency lane", "Parking allowed"],
+    "correctIndex": 1,
+    "explanation": "Solid line on YOUR side = you cannot cross/pass. Dashed line on the OTHER side = they can pass. Different rules for each direction.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "category": "lane_markings",
+    "questionText": "Double solid yellow or white lines in the center mean:",
+    "imagePath": null,
+    "options": ["Passing zone", "No passing for either direction", "Two-way traffic", "Carpool lane"],
+    "correctIndex": 1,
+    "explanation": "Double solid center lines mean absolutely NO passing or crossing for traffic in EITHER direction. Stay in your lane.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 23,
+    "category": "lane_markings",
+    "questionText": "What do broken/dashed white lines between lanes indicate?",
+    "imagePath": null,
+    "options": ["No lane changes allowed", "Lane changes permitted", "Emergency lanes only", "HOV lanes"],
+    "correctIndex": 1,
+    "explanation": "Dashed white lines separate lanes going the same direction. You MAY change lanes when safe to do so.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 24,
+    "category": "lane_markings",
+    "questionText": "A single solid yellow or white line on your right side of the road means:",
+    "imagePath": null,
+    "options": ["Edge of the roadway", "Parking lane", "Bike lane", "Emergency stopping only"],
+    "correctIndex": 0,
+    "explanation": "Solid line on the far right marks the edge of the roadway. Don't cross it except in emergencies.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 25,
+    "category": "lane_markings",
+    "questionText": "Yellow painted curbs typically indicate:",
+    "imagePath": null,
+    "options": ["Parking allowed", "No parking - loading zone", "Handicapped parking", "Fire lane"],
+    "correctIndex": 1,
+    "explanation": "Yellow curbs are NO PARKING zones, typically reserved for commercial loading/unloading during business hours.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "category": "lane_markings",
+    "questionText": "What does a white diamond painted on the road indicate?",
+    "imagePath": null,
+    "options": ["School zone", "HOV/Carpool lane", "Emergency vehicles only", "Bus stop"],
+    "correctIndex": 1,
+    "explanation": "White diamond symbols mark HOV (High Occupancy Vehicle) lanes, reserved for vehicles with multiple passengers.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "category": "lane_markings",
+    "questionText": "Thick white lines (crosswalk markings) across the road mean:",
+    "imagePath": null,
+    "options": ["Speed bumps ahead", "Pedestrian crossing zone - yield to pedestrians", "Railroad crossing", "Road ends"],
+    "correctIndex": 1,
+    "explanation": "Thick white zebra stripes or parallel lines mark pedestrian crosswalks. Always yield to pedestrians here.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 28,
+    "category": "lane_markings",
+    "questionText": "What does a solid white line separating lanes on a highway mean?",
+    "imagePath": null,
+    "options": ["Lane changes prohibited", "Lane changes discouraged but legal if safe", "Emergency lane", "Carpool lane boundary"],
+    "correctIndex": 1,
+    "explanation": "Solid white lines DISCOURAGE lane changes but they're legal if necessary and safe. Dashed = encouraged, solid = stay in lane.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "category": "lane_markings",
+    "questionText": "A red curb painted on the roadside means:",
+    "imagePath": null,
+    "options": ["30-minute parking", "No stopping or parking anytime", "Fire lane only", "Loading zone"],
+    "correctIndex": 1,
+    "explanation": "RED curbs mean absolutely NO STOPPING or PARKING at any time. Usually near fire hydrants or fire stations.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 30,
+    "category": "lane_markings",
+    "questionText": "What do thick white arrows painted on the road indicate?",
+    "imagePath": null,
+    "options": ["Suggested direction", "Required direction for that lane", "Emergency exit", "Passing zone"],
+    "correctIndex": 1,
+    "explanation": "Lane arrows show the REQUIRED direction for that lane. You MUST follow the arrow (turn, go straight, etc.).",
+    "difficulty": "easy"
+  },
+  {
+    "id": 31,
+    "category": "speed_safe_driving",
+    "questionText": "What is the minimum safe following distance in good weather conditions?",
+    "imagePath": null,
+    "options": ["1 car length", "2-3 seconds behind", "10 meters", "As close as possible"],
+    "correctIndex": 1,
+    "explanation": "The '2-3 second rule': Pick a fixed point, when the car ahead passes it, you should pass it 2-3 seconds later. This gives reaction time.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "category": "speed_safe_driving",
+    "questionText": "In wet or icy conditions, you should increase following distance to:",
+    "imagePath": null,
+    "options": ["Same as normal", "4-6 seconds or more", "1 second", "Doesn't matter"],
+    "correctIndex": 1,
+    "explanation": "Poor conditions (rain/ice/snow) DOUBLE or TRIPLE your stopping distance. Increase following time to 4-6+ seconds for safety.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "category": "speed_safe_driving",
+    "questionText": "When should you use your hazard lights (flashers) while driving?",
+    "imagePath": null,
+    "options": ["Driving in heavy rain", "Vehicle disabled or stopped on roadway", "When speeding", "Making a turn"],
+    "correctIndex": 1,
+    "explanation": "Use hazard lights when your vehicle is STOPPED or DISABLED and creating a hazard. Don't use while actively driving except in emergencies.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 34,
+    "category": "speed_safe_driving",
+    "questionText": "What is 'tailgating' and why is it dangerous?",
+    "imagePath": null,
+    "options": ["Driving too slow", "Following too closely behind another vehicle", "Improper lane usage", "Failing to signal"],
+    "correctIndex": 1,
+    "explanation": "Tailgating = following too closely. It's dangerous because you don't have enough time to stop if the vehicle ahead brakes suddenly.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 35,
+    "category": "speed_safe_driving",
+    "questionText": "At what speed should you drive in heavy traffic or residential areas?",
+    "imagePath": null,
+    "options": ["As fast as speed limit allows", "Slower than speed limit, match traffic flow", "10 over the limit", "As fast as you want"],
+    "correctIndex": 1,
+    "explanation": "Speed limits are MAXIMUMS for ideal conditions. Drive SLOWER in heavy traffic, residential areas, bad weather, or poor visibility.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 36,
+    "category": "speed_safe_driving",
+    "questionText": "When approaching a curve, you should:",
+    "imagePath": null,
+    "options": ["Accelerate through it", "Slow down before the curve, not during", "Brake hard in the curve", "Maintain constant speed"],
+    "correctIndex": 1,
+    "explanation": "Slow down BEFORE entering a curve. Braking during a curve can cause loss of control. Accelerate gently after exiting.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 37,
+    "category": "speed_safe_driving",
+    "questionText": "When should you check your mirrors?",
+    "imagePath": null,
+    "options": ["Only when changing lanes", "Every 5-8 seconds and before maneuvers", "Once every few minutes", "Only when backing up"],
+    "correctIndex": 1,
+    "explanation": "Check mirrors every 5-8 seconds to maintain awareness, and ALWAYS before changing lanes, turning, or slowing down.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 38,
+    "category": "speed_safe_driving",
+    "questionText": "What is the safest hand position on the steering wheel?",
+    "imagePath": null,
+    "options": ["12 o'clock", "9 and 3 o'clock", "6 o'clock", "One hand only"],
+    "correctIndex": 1,
+    "explanation": "9 and 3 o'clock positions provide best control and reduce injury risk if airbag deploys. Avoid 10-2 with modern airbags.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 39,
+    "category": "speed_safe_driving",
+    "questionText": "When merging onto a highway, you should:",
+    "imagePath": null,
+    "options": ["Stop and wait for an opening", "Match the speed of highway traffic", "Drive slowly to be safe", "Force your way in"],
+    "correctIndex": 1,
+    "explanation": "Use the acceleration lane to match highway speed, signal, and merge smoothly. Never stop unless absolutely necessary.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "category": "speed_safe_driving",
+    "questionText": "What is the purpose of the 'blind spot'?",
+    "imagePath": null,
+    "options": ["A parking area", "Area not visible in mirrors - must turn head to check", "Emergency stopping zone", "Speed limit zone"],
+    "correctIndex": 1,
+    "explanation": "Blind spots are areas your mirrors can't see. Always physically turn your head to check before changing lanes.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 41,
+    "category": "parking",
+    "questionText": "When parking on a hill facing upward (no curb), which way should you turn your wheels?",
+    "imagePath": null,
+    "options": ["Straight ahead", "Toward the road edge/right", "Away from the road edge", "Doesn't matter"],
+    "correctIndex": 1,
+    "explanation": "Uphill with NO curb: turn wheels TOWARD the road edge (right). If the car rolls back, it goes off the road, not into traffic.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 42,
+    "category": "parking",
+    "questionText": "When parking downhill, which direction should you turn your wheels?",
+    "imagePath": null,
+    "options": ["Straight", "Toward the curb", "Away from curb", "Left always"],
+    "correctIndex": 1,
+    "explanation": "Downhill: turn wheels TOWARD the curb. If the car rolls forward, the curb will stop it from rolling into traffic.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 43,
+    "category": "parking",
+    "questionText": "When parallel parking, your vehicle should be within what distance from the curb?",
+    "imagePath": null,
+    "options": ["1 meter", "30 cm (12 inches)", "As close as possible", "Doesn't matter"],
+    "correctIndex": 1,
+    "explanation": "When parallel parked, you should be no more than 30 cm (12 inches) from the curb. Closer is better.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 44,
+    "category": "parking",
+    "questionText": "How far from a fire hydrant must you park?",
+    "imagePath": null,
+    "options": ["1 meter", "At least 5 meters (15 feet)", "10 meters", "Right next to it"],
+    "correctIndex": 1,
+    "explanation": "Park at least 5 meters (15 feet) from fire hydrants. Firefighters need quick access in emergencies.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 45,
+    "category": "parking",
+    "questionText": "When parking uphill WITH a curb, which way should you turn your wheels?",
+    "imagePath": null,
+    "options": ["Toward the curb", "Away from the curb/left", "Straight", "Doesn't matter"],
+    "correctIndex": 1,
+    "explanation": "Uphill WITH curb: turn wheels AWAY from curb (left). If car rolls back, rear wheels hit curb and stop it.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 46,
+    "category": "parking",
+    "questionText": "When leaving a parallel parking space, you should:",
+    "imagePath": null,
+    "options": ["Back up first", "Signal, check mirrors and blind spot, then pull out when safe", "Pull out quickly", "Honk first"],
+    "correctIndex": 1,
+    "explanation": "Signal your intention, check all mirrors and blind spot for traffic/pedestrians, then pull out smoothly when clear.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 47,
+    "category": "parking",
+    "questionText": "How far from a crosswalk must you park?",
+    "imagePath": null,
+    "options": ["Right at the line", "At least 6 meters (20 feet)", "3 meters", "1 meter"],
+    "correctIndex": 1,
+    "explanation": "Park at least 6 meters (20 feet) from crosswalks so pedestrians and drivers can see each other clearly.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 48,
+    "category": "parking",
+    "questionText": "What should you always do when leaving your parked vehicle?",
+    "imagePath": null,
+    "options": ["Leave it running", "Set parking brake, turn off engine, lock doors, take keys", "Leave windows down", "Keep it in neutral"],
+    "correctIndex": 1,
+    "explanation": "ALWAYS set parking brake, turn off engine, remove keys, and lock doors. This prevents theft and roll-aways.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 49,
+    "category": "parking",
+    "questionText": "How close to an intersection can you legally park?",
+    "imagePath": null,
+    "options": ["At the corner", "At least 6 meters (20 feet) away", "1 meter", "5 meters"],
+    "correctIndex": 1,
+    "explanation": "Park at least 6 meters (20 feet) from intersections to maintain visibility for all drivers.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 50,
+    "category": "parking",
+    "questionText": "When parking at night on an unlit road, you should:",
+    "imagePath": null,
+    "options": ["Leave parking lights on", "Turn on hazard lights", "Leave headlights on high beam", "No lights needed"],
+    "correctIndex": 0,
+    "explanation": "On unlit roads at night, leave parking lights on so your vehicle is visible to other drivers.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 51,
+    "category": "emergency_hazards",
+    "questionText": "If your brakes fail while driving, what should you do FIRST?",
+    "imagePath": null,
+    "options": ["Pull emergency brake hard", "Pump the brake pedal rapidly", "Turn off engine", "Jump out"],
+    "correctIndex": 1,
+    "explanation": "First: PUMP the brake pedal rapidly - this can build pressure in hydraulic systems. Then downshift, use emergency brake gradually.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 52,
+    "category": "emergency_hazards",
+    "questionText": "You're approaching a yellow (amber) traffic light. What should you do?",
+    "imagePath": null,
+    "options": ["Speed up to make it", "Stop if safe to do so", "Always stop immediately", "Ignore it"],
+    "correctIndex": 1,
+    "explanation": "Yellow/amber means 'prepare to stop'. Stop if you can do so SAFELY. Only proceed if stopping would be dangerous (too close, sudden braking risk).",
+    "difficulty": "medium"
+  },
+  {
+    "id": 53,
+    "category": "emergency_hazards",
+    "questionText": "If your vehicle breaks down on the highway, you should:",
+    "imagePath": null,
+    "options": ["Stop in the traffic lane", "Pull to the shoulder, turn on hazards, exit safely away from traffic", "Stand behind your car", "Try to fix it immediately"],
+    "correctIndex": 1,
+    "explanation": "Pull completely off the road to shoulder, turn on hazard lights, and exit vehicle away from traffic. Call for help.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 54,
+    "category": "emergency_hazards",
+    "questionText": "What should you do if your accelerator pedal sticks?",
+    "imagePath": null,
+    "options": ["Turn off ignition immediately", "Shift to neutral, brake, pull over safely", "Pump the gas pedal", "Do nothing"],
+    "correctIndex": 1,
+    "explanation": "Shift to NEUTRAL immediately (engine will race but car won't accelerate), brake normally, pull over, then turn off engine.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 55,
+    "category": "emergency_hazards",
+    "questionText": "If you experience a tire blowout while driving, you should:",
+    "imagePath": null,
+    "options": ["Brake hard immediately", "Grip steering firmly, ease off gas, brake gently when slowing", "Accelerate", "Swerve to shoulder"],
+    "correctIndex": 1,
+    "explanation": "Blowout: grip wheel firmly, DON'T brake hard, ease off gas, let car slow down, then brake gently and pull over.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 56,
+    "category": "emergency_hazards",
+    "questionText": "Your vehicle starts to skid on ice. What should you do?",
+    "imagePath": null,
+    "options": ["Brake hard", "Steer in the direction you want to go, ease off gas", "Accelerate", "Turn steering wheel rapidly"],
+    "correctIndex": 1,
+    "explanation": "Don't brake or accelerate. Ease off gas, steer gently in the direction you want to go. Don't overcorrect.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 57,
+    "category": "emergency_hazards",
+    "questionText": "If you see a traffic accident ahead, you should:",
+    "imagePath": null,
+    "options": ["Stop to watch", "Slow down, be prepared to stop, move over if safe", "Speed past quickly", "Take photos"],
+    "correctIndex": 1,
+    "explanation": "Slow down, stay alert for emergency vehicles and people, move over to far lane if safe ('Move Over Law').",
+    "difficulty": "easy"
+  },
+  {
+    "id": 58,
+    "category": "emergency_hazards",
+    "questionText": "What's the first thing to do if involved in a collision?",
+    "imagePath": null,
+    "options": ["Leave the scene", "Check for injuries and call emergency services if needed", "Take photos first", "Move vehicles immediately"],
+    "correctIndex": 1,
+    "explanation": "First priority: check for injuries and call 911 if anyone is hurt. Then move to safety, exchange information, document scene.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 59,
+    "category": "emergency_hazards",
+    "questionText": "Your hood suddenly flies open while driving. You should:",
+    "imagePath": null,
+    "options": ["Keep driving", "Look through gap or out side window, slow down, pull over safely", "Stand on brakes", "Close it while driving"],
+    "correctIndex": 1,
+    "explanation": "Can't see through windshield? Look through gap under hood or out driver window, slow down carefully, pull to shoulder.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 60,
+    "category": "emergency_hazards",
+    "questionText": "If approaching a flashing red traffic light, you should:",
+    "imagePath": null,
+    "options": ["Speed up", "Treat it as a stop sign - stop completely, then proceed when safe", "Slow down only", "Ignore it"],
+    "correctIndex": 1,
+    "explanation": "Flashing RED = treat as STOP sign. Come to complete stop, check for traffic, then proceed when safe.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 61,
+    "category": "pedestrian_bicycle",
+    "questionText": "When a pedestrian is crossing at a marked crosswalk, you must:",
+    "imagePath": null,
+    "options": ["Honk to warn them", "Stop and yield completely", "Slow down only", "Pass quickly before they reach your lane"],
+    "correctIndex": 1,
+    "explanation": "Pedestrians at marked crosswalks ALWAYS have absolute right of way. You must stop completely and let them cross safely.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 62,
+    "category": "pedestrian_bicycle",
+    "questionText": "When passing a cyclist, what is the minimum safe distance?",
+    "imagePath": null,
+    "options": ["No minimum", "At least 1 meter (3 feet)", "10 cm", "Half a lane"],
+    "correctIndex": 1,
+    "explanation": "Always give cyclists AT LEAST 1 meter (3 feet) of space when passing. Cyclists can swerve due to potholes, wind, or obstacles.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 63,
+    "category": "pedestrian_bicycle",
+    "questionText": "You're turning right and a pedestrian is crossing the street you're turning into. Who has priority?",
+    "imagePath": null,
+    "options": ["You do - you're in a vehicle", "The pedestrian - they always have priority", "Whoever gets there first", "Neither"],
+    "correctIndex": 1,
+    "explanation": "Pedestrians ALWAYS have priority when crossing your path, whether at a crosswalk or intersection. You must wait.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 64,
+    "category": "pedestrian_bicycle",
+    "questionText": "What should you do when you see a school bus with flashing red lights and stop sign extended?",
+    "imagePath": null,
+    "options": ["Slow down only", "Stop and remain stopped until lights stop flashing", "Pass on the left", "Continue at normal speed"],
+    "correctIndex": 1,
+    "explanation": "When a school bus has flashing red lights and extended stop sign, you MUST stop from both directions until lights stop (unless divided highway).",
+    "difficulty": "easy"
+  },
+  {
+    "id": 65,
+    "category": "pedestrian_bicycle",
+    "questionText": "When should you yield to a blind pedestrian with a white cane or guide dog?",
+    "imagePath": null,
+    "options": ["Only at crosswalks", "Always - they always have right of way", "During daytime only", "Never"],
+    "correctIndex": 1,
+    "explanation": "Blind pedestrians (white cane or guide dog) ALWAYS have absolute right of way. Stop and wait, don't honk.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 66,
+    "category": "pedestrian_bicycle",
+    "questionText": "When can you drive in a bicycle lane?",
+    "imagePath": null,
+    "options": ["Anytime", "Only when turning, entering/exiting, or parking where allowed (< 200ft)", "Never", "When no cyclists present"],
+    "correctIndex": 1,
+    "explanation": "You may enter bike lanes only when making a turn, parking where permitted, or entering/exiting the road - and only for short distances.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 67,
+    "category": "pedestrian_bicycle",
+    "questionText": "A child's ball rolls into the street. What should you assume?",
+    "imagePath": null,
+    "options": ["Nothing to worry about", "A child may run after it - slow down and be ready to stop", "Speed up to avoid it", "Honk your horn"],
+    "correctIndex": 1,
+    "explanation": "Children often chase toys into streets without looking. If you see a ball, assume a child might follow and be ready to stop.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 68,
+    "category": "pedestrian_bicycle",
+    "questionText": "When opening your car door after parking on a street, you should:",
+    "imagePath": null,
+    "options": ["Open it quickly", "Check mirror and over shoulder for cyclists/pedestrians first", "Always use left door", "No need to check"],
+    "correctIndex": 1,
+    "explanation": "Check mirrors and look over shoulder before opening doors - 'dooring' cyclists is a common and serious accident.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 69,
+    "category": "pedestrian_bicycle",
+    "questionText": "At a crosswalk with no traffic signal, when must you stop for pedestrians?",
+    "imagePath": null,
+    "options": ["Never", "When they are in or entering the crosswalk", "Only if they wave", "Only in daytime"],
+    "correctIndex": 1,
+    "explanation": "At unmarked or marked crosswalks without signals, you must stop when pedestrians are in OR entering the crosswalk.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 70,
+    "category": "pedestrian_bicycle",
+    "questionText": "You're driving behind a cyclist who suddenly swerves left. What should you assume?",
+    "imagePath": null,
+    "options": ["They're being reckless", "They're avoiding an obstacle (pothole, debris, drain) - slow down and give space", "Speed past them", "Honk at them"],
+    "correctIndex": 1,
+    "explanation": "Cyclists swerve to avoid potholes, debris, drains, or car doors. Assume there's a reason - slow down and give extra room.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 71,
+    "category": "vehicle_maintenance",
+    "questionText": "How often should you check your tire pressure?",
+    "imagePath": null,
+    "options": ["Once a year", "Monthly or before long trips", "Only when flat", "Never needed"],
+    "correctIndex": 1,
+    "explanation": "Check tire pressure AT LEAST monthly and before long trips. Proper pressure improves safety, fuel efficiency, and tire life.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 72,
+    "category": "vehicle_maintenance",
+    "questionText": "What does it mean if your oil pressure warning light comes on while driving?",
+    "imagePath": null,
+    "options": ["Time for oil change soon", "Critical - stop immediately", "Check oil next week", "Normal operation"],
+    "correctIndex": 1,
+    "explanation": "Oil pressure warning = CRITICAL. Stop immediately and turn off engine. Driving without oil pressure destroys the engine in minutes.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 73,
+    "category": "vehicle_maintenance",
+    "questionText": "How often should you check your engine oil level?",
+    "imagePath": null,
+    "options": ["Once a year", "At least monthly and before long trips", "Only when warning light comes on", "Never - the car monitors it"],
+    "correctIndex": 1,
+    "explanation": "Check oil level monthly and before long trips. Low oil can damage your engine before the warning light appears.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 74,
+    "category": "vehicle_maintenance",
+    "questionText": "Your temperature gauge shows the engine is overheating. What should you do?",
+    "imagePath": null,
+    "options": ["Keep driving", "Pull over safely, turn off engine, wait for it to cool", "Add water immediately", "Rev the engine"],
+    "correctIndex": 1,
+    "explanation": "Overheating = stop immediately. Turn off engine and let it cool for 30+ minutes. Driving can cause severe engine damage.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 75,
+    "category": "vehicle_maintenance",
+    "questionText": "When should you replace your windshield wiper blades?",
+    "imagePath": null,
+    "options": ["Every 10 years", "When they streak, skip, or don't clear water (typically 6-12 months)", "Never", "Only when completely broken"],
+    "correctIndex": 1,
+    "explanation": "Replace wipers when they streak, skip, or leave water. Typically every 6-12 months. Good wipers are critical for visibility.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 76,
+    "category": "vehicle_maintenance",
+    "questionText": "What is the minimum legal tire tread depth in most jurisdictions?",
+    "imagePath": null,
+    "options": ["1mm", "1.6mm (2/32 inch)", "5mm", "Completely bald is fine"],
+    "correctIndex": 1,
+    "explanation": "Minimum legal tread depth is typically 1.6mm (2/32 inch). Replace tires before reaching this for safety.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 77,
+    "category": "vehicle_maintenance",
+    "questionText": "What does the 'check engine' light indicate?",
+    "imagePath": null,
+    "options": ["Nothing serious", "Potential emissions or engine problem - get diagnosed soon", "Time for oil change", "Gas cap is loose only"],
+    "correctIndex": 1,
+    "explanation": "Check engine light = emissions or engine issue detected. Get it diagnosed soon. Could be minor (loose gas cap) or serious.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 78,
+    "category": "vehicle_maintenance",
+    "questionText": "How often should you have your brakes inspected?",
+    "imagePath": null,
+    "options": ["Never", "At least annually or if you notice problems", "Every 10 years", "Only when they fail"],
+    "correctIndex": 1,
+    "explanation": "Inspect brakes annually or immediately if you notice squealing, grinding, vibration, or longer stopping distances.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 79,
+    "category": "vehicle_maintenance",
+    "questionText": "What should you do if your steering wheel vibrates at highway speeds?",
+    "imagePath": null,
+    "options": ["Ignore it", "Get tires balanced and alignment checked", "Drive faster", "Hold wheel tighter"],
+    "correctIndex": 1,
+    "explanation": "Vibration at speed usually indicates unbalanced tires or alignment issues. Get it checked - it affects safety and tire wear.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 80,
+    "category": "vehicle_maintenance",
+    "questionText": "When should you use your emergency/parking brake?",
+    "imagePath": null,
+    "options": ["Only on hills", "Every time you park", "Never", "Only in manual transmission cars"],
+    "correctIndex": 1,
+    "explanation": "Use parking brake EVERY time you park, even on flat ground. It prevents rolling and keeps brake mechanism from seizing.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 81,
+    "category": "weather_conditions",
+    "questionText": "What should you do if you encounter heavy fog?",
+    "imagePath": null,
+    "options": ["Use high beams", "Use low beams and fog lights", "Turn off all lights", "Use hazard lights while driving"],
+    "correctIndex": 1,
+    "explanation": "In fog: use LOW beams (high beams reflect off fog and blind you) and fog lights. Reduce speed and increase following distance.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 82,
+    "category": "weather_conditions",
+    "questionText": "If your car starts to hydroplane on wet roads, you should:",
+    "imagePath": null,
+    "options": ["Brake hard immediately", "Ease off gas, steer straight, don't brake", "Accelerate to regain control", "Turn steering wheel rapidly"],
+    "correctIndex": 1,
+    "explanation": "Hydroplaning: Ease off gas gently, keep steering straight, DON'T brake suddenly. Wait for tires to regain traction naturally.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 83,
+    "category": "weather_conditions",
+    "questionText": "In heavy rain, you should reduce your speed by at least:",
+    "imagePath": null,
+    "options": ["No need to slow down", "1/3 of normal speed", "Half speed", "10 km/h"],
+    "correctIndex": 1,
+    "explanation": "Heavy rain reduces visibility and traction significantly. Reduce speed by at least 1/3 and double your following distance.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 84,
+    "category": "weather_conditions",
+    "questionText": "When driving in snow or ice, you should:",
+    "imagePath": null,
+    "options": ["Drive at normal speed", "Reduce speed, accelerate/brake gently, increase following distance 8-10 seconds", "Use cruise control", "Brake hard when needed"],
+    "correctIndex": 1,
+    "explanation": "Snow/ice: slow down significantly, all inputs (gas, brake, steering) gentle and smooth, following distance 8-10 seconds.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 85,
+    "category": "weather_conditions",
+    "questionText": "What causes 'black ice' and why is it dangerous?",
+    "imagePath": null,
+    "options": ["Colored ice", "Thin, nearly invisible ice on road - extremely slippery", "Oil spills", "Asphalt color"],
+    "correctIndex": 1,
+    "explanation": "Black ice is thin, transparent ice you can't see. It forms on bridges/overpasses first and is extremely slippery with no warning.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 86,
+    "category": "weather_conditions",
+    "questionText": "When should you use your windshield wipers?",
+    "imagePath": null,
+    "options": ["Only in heavy rain", "Whenever you need headlights, or visibility is reduced", "Never", "Only when requested"],
+    "correctIndex": 1,
+    "explanation": "Use wipers whenever visibility is reduced by rain, snow, sleet, or spray from other vehicles. If you need headlights, use wipers.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 87,
+    "category": "weather_conditions",
+    "questionText": "What is the most dangerous time when it starts to rain after a dry period?",
+    "imagePath": null,
+    "options": ["After several hours", "The first 10-15 minutes - oil rises to surface", "Not dangerous", "Only at night"],
+    "correctIndex": 1,
+    "explanation": "First 10-15 minutes of rain after dry weather is most dangerous - oil and residue rise creating very slippery conditions.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 88,
+    "category": "weather_conditions",
+    "questionText": "In heavy snow, if you must drive, you should:",
+    "imagePath": null,
+    "options": ["Use cruise control", "Drive in tracks left by other vehicles, maintain steady speed", "Speed up", "Brake frequently"],
+    "correctIndex": 1,
+    "explanation": "In snow: follow tire tracks of other vehicles where road is clearer, maintain steady speed, avoid sudden movements.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 89,
+    "category": "weather_conditions",
+    "questionText": "If you're caught in a severe thunderstorm while driving, you should:",
+    "imagePath": null,
+    "options": ["Pull over safely and wait it out", "Drive faster to get out of it", "Continue at normal speed", "Get out of car"],
+    "correctIndex": 0,
+    "explanation": "Severe storms with lightning, hail, or very heavy rain: pull over safely to shoulder, turn on hazards, and wait for it to pass.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 90,
+    "category": "weather_conditions",
+    "questionText": "When driving in strong crosswinds, you should:",
+    "imagePath": null,
+    "options": ["Speed up", "Reduce speed, grip wheel firmly, be ready for gusts", "Change lanes frequently", "Use cruise control"],
+    "correctIndex": 1,
+    "explanation": "Strong winds: reduce speed, grip wheel firmly, anticipate gusts (especially on bridges or passing large vehicles).",
+    "difficulty": "medium"
+  },
+  {
+    "id": 91,
+    "category": "distracted_impaired",
+    "questionText": "Using a handheld phone while driving:",
+    "imagePath": null,
+    "options": ["Is safe if brief", "Is illegal in most places and very dangerous", "Only dangerous at high speeds", "Fine if using speakerphone"],
+    "correctIndex": 1,
+    "explanation": "Handheld phone use is illegal in most jurisdictions and increases crash risk 4x. Even 'brief' use takes eyes off road for crucial seconds.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 92,
+    "category": "distracted_impaired",
+    "questionText": "After drinking alcohol, when is it safe to drive?",
+    "imagePath": null,
+    "options": ["After 1 hour per drink", "After coffee", "When you feel fine", "Only when blood alcohol is below legal limit"],
+    "correctIndex": 3,
+    "explanation": "The ONLY safe answer is when your blood alcohol is below the legal limit (usually 0.05-0.08%). 'Feeling fine' is unreliable. Wait it out or use alternate transport.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 93,
+    "category": "distracted_impaired",
+    "questionText": "Fatigue/drowsy driving is:",
+    "imagePath": null,
+    "options": ["Not a real concern", "As dangerous as drunk driving", "Only affects night drivers", "Fine with coffee"],
+    "correctIndex": 1,
+    "explanation": "Drowsy driving is as dangerous as drunk driving - reaction time slows, attention lapses. If tired, STOP and rest. Coffee is temporary, not a solution.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 94,
+    "category": "distracted_impaired",
+    "questionText": "Which of these is considered distracted driving?",
+    "imagePath": null,
+    "options": ["Eating while driving", "Adjusting radio", "Talking to passengers", "All of the above"],
+    "correctIndex": 3,
+    "explanation": "ALL these activities are distractions. ANY activity that takes eyes, hands, or mind off driving is dangerous.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 95,
+    "category": "distracted_impaired",
+    "questionText": "If you're feeling drowsy while driving, you should:",
+    "imagePath": null,
+    "options": ["Turn up radio", "Pull over and rest or switch drivers", "Drink coffee and keep going", "Open windows"],
+    "correctIndex": 1,
+    "explanation": "Drowsy? Pull over to a safe place and rest/nap (20-30 min), or switch drivers. Temporary fixes don't work.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 96,
+    "category": "distracted_impaired",
+    "questionText": "What is the legal blood alcohol concentration (BAC) limit for most drivers?",
+    "imagePath": null,
+    "options": ["0.00%", "0.05% or 0.08% depending on jurisdiction", "0.10%", "No limit"],
+    "correctIndex": 1,
+    "explanation": "Legal limit is typically 0.05% (many European countries) or 0.08% (USA, Canada). Lower limits for new/commercial drivers. But ANY alcohol impairs driving.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 97,
+    "category": "distracted_impaired",
+    "questionText": "Taking prescription medication before driving:",
+    "imagePath": null,
+    "options": ["Is always safe", "May impair driving - check labels and ask doctor", "Only affects professional drivers", "Is fine if you feel normal"],
+    "correctIndex": 1,
+    "explanation": "Many medications cause drowsiness or impairment. Check labels for warnings and ask your doctor if it's safe to drive.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 98,
+    "category": "distracted_impaired",
+    "questionText": "What is 'tunnel vision' in the context of impaired driving?",
+    "imagePath": null,
+    "options": ["Driving in tunnels", "Reduced peripheral vision due to alcohol/drugs/fatigue", "Better focus", "A medical condition"],
+    "correctIndex": 1,
+    "explanation": "Alcohol, drugs, and fatigue reduce peripheral vision (tunnel vision). You can only see straight ahead and miss hazards to the sides.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 99,
+    "category": "distracted_impaired",
+    "questionText": "If you notice another driver showing signs of impairment (swerving, erratic speed), you should:",
+    "imagePath": null,
+    "options": ["Follow closely", "Keep your distance, report to police if safe", "Try to stop them", "Ignore it"],
+    "correctIndex": 1,
+    "explanation": "Stay far back from impaired drivers. If safe, note vehicle details and call police. Don't try to stop them yourself.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 100,
+    "category": "distracted_impaired",
+    "questionText": "How long does it take for your body to process one standard drink of alcohol?",
+    "imagePath": null,
+    "options": ["30 minutes", "About 1 hour per drink", "2 hours", "Depends on coffee consumed"],
+    "correctIndex": 1,
+    "explanation": "Your liver processes about one standard drink per hour. Coffee, cold showers, etc. DON'T speed this up. Only time works.",
+    "difficulty": "medium"
+  }
+]

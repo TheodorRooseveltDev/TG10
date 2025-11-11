@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "category": "international_road_signs",
+    "questionText": "What shape is a STOP sign?",
+    "imagePath": null,
+    "options": ["Circle", "Triangle", "Octagon", "Square"],
+    "correctIndex": 2,
+    "explanation": "STOP signs are octagonal (8-sided) in shape worldwide. This unique shape makes them instantly recognizable even when covered in snow or viewed from behind.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "category": "international_road_signs",
+    "questionText": "What does a triangular sign with a red border typically indicate?",
+    "imagePath": null,
+    "options": ["Information", "Warning", "Prohibition", "Mandatory action"],
+    "correctIndex": 1,
+    "explanation": "Triangular signs with red borders are universal warning signs. They alert drivers to hazards ahead such as curves, intersections, or animal crossings.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "category": "right_of_way_priority",
+    "questionText": "At a 4-way stop, if you arrive at the same time as another car to your right, who goes first?",
+    "imagePath": null,
+    "options": ["You go first", "The car on your right", "Whoever is driving faster", "The larger vehicle"],
+    "correctIndex": 1,
+    "explanation": "When two vehicles arrive simultaneously at an intersection, the vehicle on the right has the right of way. This is a fundamental traffic rule in most countries.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "category": "lane_markings",
+    "questionText": "What do double solid yellow lines in the center of the road mean?",
+    "imagePath": null,
+    "options": ["Passing is allowed if safe", "No passing in either direction", "One-way street", "Bike lane boundary"],
+    "correctIndex": 1,
+    "explanation": "Double solid yellow/white lines indicate that passing is not allowed in either direction. Crossing these lines is illegal and dangerous.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "category": "lane_markings",
+    "questionText": "Can you cross a dashed yellow center line to pass another vehicle?",
+    "imagePath": null,
+    "options": ["Never", "Yes, if it's safe and legal", "Only on highways", "Only during daytime"],
+    "correctIndex": 1,
+    "explanation": "Dashed yellow lines indicate that passing is permitted when it is safe to do so. Always check for oncoming traffic and ensure you have clear visibility ahead.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "category": "speed_safe_driving",
+    "questionText": "What is a safe following distance in normal driving conditions?",
+    "imagePath": null,
+    "options": ["1 car length", "2-3 seconds", "10 feet", "1 minute"],
+    "correctIndex": 1,
+    "explanation": "The 2-3 second rule gives you enough time to react if the vehicle ahead stops suddenly. Pick a fixed point and count the seconds between when the car ahead passes it and when you do.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 7,
+    "category": "speed_safe_driving",
+    "questionText": "Should you drive slower in rain or fog?",
+    "imagePath": null,
+    "options": ["No, maintain the speed limit", "Yes, reduce speed for safety", "Only at night", "Only on highways"],
+    "correctIndex": 1,
+    "explanation": "Reduced visibility and slippery roads require slower speeds. Rain and fog make it harder to see and stop, so reducing speed is essential for safety.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "category": "parking",
+    "questionText": "How far from a fire hydrant must you park?",
+    "imagePath": null,
+    "options": ["Any distance is fine", "At least 10 feet/3 meters", "At least 15 feet/5 meters", "At least 50 feet/15 meters"],
+    "correctIndex": 2,
+    "explanation": "Most jurisdictions require parking at least 15 feet (5 meters) from a fire hydrant to ensure emergency vehicles have clear access to water supply.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "category": "parking",
+    "questionText": "Can you park within a crosswalk?",
+    "imagePath": null,
+    "options": ["Yes, if no pedestrians are present", "Yes, if only for a few minutes", "No, never", "Yes, on weekends"],
+    "correctIndex": 2,
+    "explanation": "Parking in a crosswalk is always illegal and dangerous. It blocks pedestrian access and reduces visibility for both drivers and pedestrians.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "category": "emergency_hazards",
+    "questionText": "What should you do if your brakes fail while driving?",
+    "imagePath": null,
+    "options": ["Turn off the engine immediately", "Pump the brakes and use the emergency brake", "Speed up to get to safety faster", "Honk your horn continuously"],
+    "correctIndex": 1,
+    "explanation": "If brakes fail, pump them rapidly to build pressure. Use the emergency/parking brake gradually. Shift to a lower gear and look for a safe place to stop.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 11,
+    "category": "emergency_hazards",
+    "questionText": "How should you treat a traffic light that is completely out of order?",
+    "imagePath": null,
+    "options": ["Drive through quickly", "Treat it as a 4-way stop", "Honk before proceeding", "Follow the car ahead"],
+    "correctIndex": 1,
+    "explanation": "A malfunctioning traffic light should be treated as a 4-way stop. All vehicles must stop and yield according to arrival order and right-of-way rules.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 12,
+    "category": "pedestrian_bicycle",
+    "questionText": "Must you stop for pedestrians waiting at a crosswalk?",
+    "imagePath": null,
+    "options": ["Only if they've started crossing", "Yes, always", "No, they must wait", "Only in school zones"],
+    "correctIndex": 1,
+    "explanation": "In most jurisdictions, drivers must yield to pedestrians at marked crosswalks, even if they haven't started crossing yet. Pedestrian safety is paramount.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "category": "pedestrian_bicycle",
+    "questionText": "Can bicycles legally use the full traffic lane?",
+    "imagePath": null,
+    "options": ["No, they must use the shoulder", "Only on small roads", "Yes, they have the same rights as vehicles", "Only if there's no bike lane"],
+    "correctIndex": 2,
+    "explanation": "Bicycles are considered vehicles in most places and have the right to use full lanes. Drivers must share the road and pass bicycles safely with adequate clearance.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "category": "vehicle_maintenance",
+    "questionText": "What is the minimum safe tire tread depth?",
+    "imagePath": null,
+    "options": ["1/16 inch (1mm)", "1/8 inch (3mm)", "2/32 inch (1.6mm)", "1/4 inch (6mm)"],
+    "correctIndex": 2,
+    "explanation": "The legal minimum tread depth in most places is 2/32 inch (1.6mm). Tires below this depth cannot properly channel water and increase the risk of hydroplaning.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 15,
+    "category": "vehicle_maintenance",
+    "questionText": "Are seat belts required for all passengers?",
+    "imagePath": null,
+    "options": ["Only the driver", "Only front seat passengers", "Yes, all occupants", "Only children under 12"],
+    "correctIndex": 2,
+    "explanation": "Seat belts save lives. Most jurisdictions require all occupants to wear seat belts, regardless of seating position. Unbelted passengers become projectiles in crashes.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "category": "weather_conditions",
+    "questionText": "How should you drive in dense fog?",
+    "imagePath": null,
+    "options": ["Use high beams for better visibility", "Reduce speed and use low beams", "Follow the car ahead closely", "Turn on hazard lights while driving"],
+    "correctIndex": 1,
+    "explanation": "In fog, use low beams (not high beams which reflect back), reduce speed significantly, and increase following distance. High beams reflect off fog and reduce visibility.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "category": "weather_conditions",
+    "questionText": "What is hydroplaning?",
+    "imagePath": null,
+    "options": ["Driving on ice", "Tires riding on a film of water", "Overheated brakes", "Skidding on gravel"],
+    "correctIndex": 1,
+    "explanation": "Hydroplaning occurs when tires lose contact with the road due to water buildup. The tire rides on top of the water, causing loss of traction and steering control.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 18,
+    "category": "weather_conditions",
+    "questionText": "Should you use cruise control in rainy conditions?",
+    "imagePath": null,
+    "options": ["Yes, it helps maintain safe speed", "No, you need manual control", "Only on highways", "Only if traffic is light"],
+    "correctIndex": 1,
+    "explanation": "Never use cruise control in wet conditions. If hydroplaning occurs, cruise control will try to maintain speed, making the situation worse. You need immediate manual control.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 19,
+    "category": "distracted_impaired",
+    "questionText": "Is it safe to text while stopped at a red light?",
+    "imagePath": null,
+    "options": ["Yes, the car is stopped", "No, it's illegal and dangerous", "Yes, if you're quick", "Only to read messages"],
+    "correctIndex": 1,
+    "explanation": "Texting at red lights is illegal in many places and still distracting. You may miss the light change, cause delays, or fail to notice hazards like emergency vehicles.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 20,
+    "category": "distracted_impaired",
+    "questionText": "What is the safest blood alcohol concentration (BAC) for driving?",
+    "imagePath": null,
+    "options": ["0.08% (legal limit in many places)", "0.05%", "0.00% (zero tolerance)", "0.02%"],
+    "correctIndex": 2,
+    "explanation": "The only safe BAC is 0.00%. Even small amounts of alcohol impair judgment, reaction time, and coordination. Never drink and drive - designate a sober driver or use alternatives.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 21,
+    "category": "right_of_way_priority",
+    "questionText": "When should you yield to emergency vehicles with sirens and lights?",
+    "imagePath": null,
+    "options": ["Only on highways", "Always, immediately pull over", "Only if they're behind you", "Only during daytime"],
+    "correctIndex": 1,
+    "explanation": "Always yield to emergency vehicles. Pull over to the right and stop safely. Emergency vehicles need clear paths to reach critical situations quickly.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 22,
+    "category": "right_of_way_priority",
+    "questionText": "At a roundabout, who has the right of way?",
+    "imagePath": null,
+    "options": ["Vehicles entering the roundabout", "Vehicles already in the roundabout", "Larger vehicles", "Whoever is faster"],
+    "correctIndex": 1,
+    "explanation": "Vehicles already circulating in a roundabout have the right of way. Entering vehicles must yield and wait for a safe gap in traffic before entering.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 23,
+    "category": "international_road_signs",
+    "questionText": "What does a circular sign with a red border and blue interior typically mean?",
+    "imagePath": null,
+    "options": ["Information", "Warning", "Prohibition", "Mandatory action"],
+    "correctIndex": 3,
+    "explanation": "Circular signs with red borders generally indicate mandatory actions or requirements. Blue interiors often indicate specific mandatory actions drivers must take.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "category": "international_road_signs",
+    "questionText": "What does a rectangular blue sign typically indicate?",
+    "imagePath": null,
+    "options": ["Warning", "Information or services", "Prohibition", "Speed limit"],
+    "correctIndex": 1,
+    "explanation": "Blue rectangular signs are informational, indicating services like hospitals, parking, rest areas, or general road information. They help drivers find facilities.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 25,
+    "category": "speed_safe_driving",
+    "questionText": "When is it acceptable to exceed the posted speed limit?",
+    "imagePath": null,
+    "options": ["When traffic is moving faster", "To pass another vehicle", "In an emergency", "Never"],
+    "correctIndex": 3,
+    "explanation": "Speed limits are legal maximums under ideal conditions. You should never exceed them. In poor conditions, drive slower than the posted limit for safety.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 26,
+    "category": "parking",
+    "questionText": "How close to an intersection can you legally park?",
+    "imagePath": null,
+    "options": ["Right up to the corner", "At least 10 feet/3 meters", "At least 30 feet/10 meters", "Any distance if no signs"],
+    "correctIndex": 2,
+    "explanation": "Most places prohibit parking within 30 feet (10 meters) of an intersection to ensure visibility for all drivers and safe turning movements.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "category": "pedestrian_bicycle",
+    "questionText": "When can you pass a stopped school bus with flashing lights?",
+    "imagePath": null,
+    "options": ["Never while lights are flashing", "If you're on the opposite side of a divided highway", "If no children are visible", "After honking your horn"],
+    "correctIndex": 1,
+    "explanation": "You must stop for school buses with flashing lights except on divided highways where you're traveling in the opposite direction. Children's safety is critical.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 28,
+    "category": "emergency_hazards",
+    "questionText": "What should you do immediately after a collision?",
+    "imagePath": null,
+    "options": ["Move vehicles off the road", "Check for injuries and call emergency services", "Exchange insurance information", "Take photos"],
+    "correctIndex": 1,
+    "explanation": "First priority: check for injuries and call 911/emergency services. Safety and medical care come before property concerns. Then secure the scene if possible.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "category": "weather_conditions",
+    "questionText": "What's the safest way to drive on icy roads?",
+    "imagePath": null,
+    "options": ["Accelerate quickly to maintain traction", "Use cruise control for steadiness", "Reduce speed and make gentle movements", "Brake hard if you start sliding"],
+    "correctIndex": 2,
+    "explanation": "On ice: slow down significantly, make all movements (steering, braking, accelerating) very gently, increase following distance dramatically, and avoid sudden actions.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "category": "distracted_impaired",
+    "questionText": "How often should you take breaks on long drives?",
+    "imagePath": null,
+    "options": ["Every 4 hours", "Every 2 hours or 100 miles", "Every 6 hours", "Only when tired"],
+    "correctIndex": 1,
+    "explanation": "Take breaks every 2 hours or 100 miles to prevent fatigue. Drowsy driving is as dangerous as drunk driving. Stretch, hydrate, and rest regularly on long trips.",
+    "difficulty": "medium"
+  }
+]

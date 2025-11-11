@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "category": "international_road_signs",
+    "questionText": "What does this red triangular sign with an exclamation mark mean?",
+    "imagePath": "assets/images/road_signs/sign_road_works.png",
+    "options": ["No entry", "General warning/danger ahead", "Stop required", "Speed limit"],
+    "correctIndex": 1,
+    "explanation": "A red triangle with an exclamation mark is the universal symbol for 'general warning' - alerting drivers to potential hazards ahead.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "category": "international_road_signs",
+    "questionText": "This octagonal red sign means:",
+    "imagePath": "assets/images/road_signs/sign_stop.png",
+    "options": ["Yield to traffic", "Complete stop required", "Slow down", "No parking"],
+    "correctIndex": 1,
+    "explanation": "The octagon shape is unique to STOP signs worldwide. Drivers must come to a complete stop before proceeding.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "category": "international_road_signs",
+    "questionText": "What does this circular blue sign with a white arrow pointing right mean?",
+    "imagePath": "assets/images/road_signs/sign_turn_right.png",
+    "options": ["Turn right recommended", "Turn right mandatory", "Right lane only", "Exit on right"],
+    "correctIndex": 1,
+    "explanation": "Blue circular signs with white arrows indicate mandatory directions. You MUST turn right at this intersection.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "category": "international_road_signs",
+    "questionText": "This red circle with a white horizontal bar means:",
+    "imagePath": "assets/images/road_signs/sign_no_entry.png",
+    "options": ["One way street", "No entry for all vehicles", "Road closed ahead", "Do not enter"],
+    "correctIndex": 1,
+    "explanation": "A red circle with a white bar is the international 'No Entry' sign - absolutely no vehicles allowed.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "category": "international_road_signs",
+    "questionText": "What does this sign with a cross symbol indicate?",
+    "imagePath": "assets/images/road_signs/sign_priority.png",
+    "options": ["Hospital nearby", "Priority road", "Railroad crossing", "Church zone"],
+    "correctIndex": 1,
+    "explanation": "This sign indicates you are on a priority road. Vehicles on side roads must yield to you.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "category": "international_road_signs",
+    "questionText": "This triangular sign with two children pictogram means:",
+    "imagePath": "assets/images/road_signs/sign_children.png",
+    "options": ["Playground area", "School zone - reduce speed", "Children crossing allowed", "Family parking"],
+    "correctIndex": 1,
+    "explanation": "Children pictogram signs warn of school zones. Drivers must reduce speed and watch for children crossing.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "category": "international_road_signs",
+    "questionText": "What does this circular sign with a red border and number '50' mean?",
+    "imagePath": "assets/images/road_signs/sign_speed_50.png",
+    "options": ["Minimum speed 50", "Maximum speed 50 km/h", "Road number 50", "Distance 50km"],
+    "correctIndex": 1,
+    "explanation": "Numbers inside a red circle indicate maximum speed limits. This sign means you cannot exceed 50 km/h.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 8,
+    "category": "international_road_signs",
+    "questionText": "This triangular warning sign shows a car skidding. What does it warn about?",
+    "imagePath": "assets/images/road_signs/sign_slippery.png",
+    "options": ["Sharp curve ahead", "Slippery/icy road conditions", "No skidding zone", "Tire check required"],
+    "correctIndex": 1,
+    "explanation": "A skidding car symbol warns that road conditions may be slippery due to ice, rain, or loose gravel.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 9,
+    "category": "international_road_signs",
+    "questionText": "What does this circular blue sign with a bicycle pictogram mean?",
+    "imagePath": "assets/images/road_signs/sign_bicycle.png",
+    "options": ["Bicycles prohibited", "Bicycle lane - cyclists only", "Bicycle parking", "Watch for cyclists"],
+    "correctIndex": 1,
+    "explanation": "Blue circular signs are mandatory. This designates a bicycle-only path where motor vehicles are not allowed.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "category": "international_road_signs",
+    "questionText": "This red triangle with a deer/animal silhouette warns of:",
+    "imagePath": "assets/images/road_signs/sign_animals.png",
+    "options": ["Zoo nearby", "Wild animals may cross", "Hunting area", "Farm animals only"],
+    "correctIndex": 1,
+    "explanation": "Animal crossing signs warn drivers that wild animals frequently cross the road in this area. Reduce speed and stay alert.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "category": "international_road_signs",
+    "questionText": "What does this inverted red triangle (point down) mean?",
+    "imagePath": "assets/images/road_signs/sign_yield.png",
+    "options": ["Stop and wait", "Yield to oncoming traffic", "Merge ahead", "Priority road ends"],
+    "correctIndex": 1,
+    "explanation": "The inverted triangle is the universal YIELD sign. You must give way to other traffic but don't need to stop completely if safe.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "category": "international_road_signs",
+    "questionText": "This circular sign with a red diagonal line through a 'P' means:",
+    "imagePath": "assets/images/road_signs/sign_no_parking.png",
+    "options": ["Parking allowed", "No parking zone", "Paid parking only", "Disabled parking"],
+    "correctIndex": 1,
+    "explanation": "A red circle with a diagonal line is a prohibition. The 'P' with a line means absolutely no parking in this zone.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "category": "international_road_signs",
+    "questionText": "What does this blue rectangular sign with a white 'P' indicate?",
+    "imagePath": "assets/images/road_signs/sign_parking.png",
+    "options": ["No parking", "Parking permitted", "Private property", "Police station"],
+    "correctIndex": 1,
+    "explanation": "Blue rectangular signs provide information. A white 'P' indicates that parking is permitted in this area.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 14,
+    "category": "international_road_signs",
+    "questionText": "This warning sign shows a curve to the left. What does it mean?",
+    "imagePath": "assets/images/road_signs/sign_curve_left.png",
+    "options": ["Turn left mandatory", "Sharp curve ahead - reduce speed", "Left lane only", "U-turn allowed"],
+    "correctIndex": 1,
+    "explanation": "Curve warning signs indicate a sharp bend ahead. Reduce speed and stay in your lane.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "category": "international_road_signs",
+    "questionText": "What does this circular sign showing two cars side-by-side with a red line mean?",
+    "imagePath": "assets/images/road_signs/sign_no_overtaking.png",
+    "options": ["Two lanes required", "No overtaking/passing", "Carpooling only", "Wide vehicles prohibited"],
+    "correctIndex": 1,
+    "explanation": "Two vehicles with a red prohibition circle means overtaking/passing other vehicles is not allowed in this zone.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 16,
+    "category": "international_road_signs",
+    "questionText": "This triangular sign with railroad crossing bars (X shape) warns of:",
+    "imagePath": "assets/images/road_signs/sign_railway.png",
+    "options": ["Road closure", "Railway crossing ahead", "Bridge crossing", "Construction zone"],
+    "correctIndex": 1,
+    "explanation": "The X symbol represents railroad tracks. This sign warns of a railway crossing ahead - look and listen for trains.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 17,
+    "category": "international_road_signs",
+    "questionText": "What does this sign with a pedestrian crossing pattern mean?",
+    "imagePath": "assets/images/road_signs/sign_pedestrian_crossing.png",
+    "options": ["Watch for pedestrians", "Pedestrian crossing ahead", "Pedestrian zone", "Walking allowed"],
+    "correctIndex": 1,
+    "explanation": "This sign warns of a marked pedestrian crossing ahead. Reduce speed and be prepared to stop for pedestrians.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 18,
+    "category": "international_road_signs",
+    "questionText": "This warning sign shows a traffic light symbol. What does it indicate?",
+    "imagePath": "assets/images/road_signs/sign_traffic_lights.png",
+    "options": ["Broken traffic light", "Traffic lights ahead", "Flashing yellow light", "Police checkpoint"],
+    "correctIndex": 1,
+    "explanation": "This sign warns that you're approaching traffic lights, especially useful on high-speed roads or where lights are unexpected.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 19,
+    "category": "international_road_signs",
+    "questionText": "What does this sign with diagonal line over two cars mean?",
+    "imagePath": "assets/images/road_signs/sign_end_no_overtaking.png",
+    "options": ["Overtaking zone starts", "End of no overtaking zone", "Two lanes merge", "Passing required"],
+    "correctIndex": 1,
+    "explanation": "A diagonal line through a prohibition sign means the restriction has ended. You may now overtake if safe.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 20,
+    "category": "international_road_signs",
+    "questionText": "This triangular warning sign shows a curve to the right. What should you do?",
+    "imagePath": "assets/images/road_signs/sign_curve_right.png",
+    "options": ["Speed up", "Reduce speed for sharp curve", "Change lanes", "Stop completely"],
+    "correctIndex": 1,
+    "explanation": "Right curve warning indicates a sharp bend ahead. Reduce speed and prepare to steer right.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 21,
+    "category": "international_road_signs",
+    "questionText": "What does this blue circular sign with two white arrows (up and down) mean?",
+    "imagePath": "assets/images/road_signs/sign_two_way.png",
+    "options": ["One way ends", "Two-way traffic", "Reversible lanes", "U-turn allowed"],
+    "correctIndex": 1,
+    "explanation": "Opposing arrows indicate two-way traffic. This often appears where a one-way section ends.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 22,
+    "category": "international_road_signs",
+    "questionText": "This sign shows a speed limit of 30. What is the maximum speed?",
+    "imagePath": "assets/images/road_signs/sign_speed_30.png",
+    "options": ["30 mph", "30 km/h", "30 meters ahead", "Minimum 30"],
+    "correctIndex": 1,
+    "explanation": "Red circle with number indicates maximum speed limit in km/h. You cannot exceed 30 km/h in this zone.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 23,
+    "category": "international_road_signs",
+    "questionText": "What does this triangular sign with curved arrows forming a circle mean?",
+    "imagePath": "assets/images/road_signs/sign_roundabout.png",
+    "options": ["U-turn allowed", "Roundabout ahead", "Circular route", "No turning"],
+    "correctIndex": 1,
+    "explanation": "Circular arrows in a triangle warn of a roundabout/traffic circle ahead. Yield to traffic already in the circle.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 24,
+    "category": "international_road_signs",
+    "questionText": "This red triangle shows roadworks. What does it warn?",
+    "imagePath": "assets/images/road_signs/sign_road_works.png",
+    "options": ["Road construction ahead", "Digging prohibited", "Workers crossing", "Maintenance area"],
+    "correctIndex": 0,
+    "explanation": "Roadworks symbol indicates construction ahead. Expect delays, reduced speeds, and workers on the road.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 25,
+    "category": "international_road_signs",
+    "questionText": "What does this circular blue sign with a white arrow pointing straight mean?",
+    "imagePath": "assets/images/road_signs/sign_straight_only.png",
+    "options": ["Straight recommended", "Must go straight only", "Highway entrance", "One way ahead"],
+    "correctIndex": 1,
+    "explanation": "Blue mandatory signs with arrows indicate required directions. You must proceed straight - no turns allowed.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 26,
+    "category": "international_road_signs",
+    "questionText": "This blue sign shows an arrow pointing left. What does it mean?",
+    "imagePath": "assets/images/road_signs/sign_one_way_left.png",
+    "options": ["Left turn recommended", "One-way street - left only", "Left lane ends", "Emergency exit left"],
+    "correctIndex": 1,
+    "explanation": "Blue rectangular sign with arrow indicates a one-way street. All traffic must proceed in the direction of the arrow.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 27,
+    "category": "international_road_signs",
+    "questionText": "What does this blue sign with arrow pointing right indicate?",
+    "imagePath": "assets/images/road_signs/sign_one_way_right.png",
+    "options": ["Turn right", "One-way street - right only", "Right lane only", "Exit on right"],
+    "correctIndex": 1,
+    "explanation": "Blue rectangular sign with right arrow indicates a one-way street going right. You must travel in this direction only.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 28,
+    "category": "international_road_signs",
+    "questionText": "This circular blue sign shows a left turn arrow. What does it require?",
+    "imagePath": "assets/images/road_signs/sign_turn_left.png",
+    "options": ["Left turn recommended", "Turn left mandatory", "Left lane only", "U-turn allowed"],
+    "correctIndex": 1,
+    "explanation": "Blue circular mandatory sign with left arrow means you MUST turn left at this intersection - no other options.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 29,
+    "category": "international_road_signs",
+    "questionText": "What does this sign with diagonal line through priority symbol mean?",
+    "imagePath": "assets/images/road_signs/sign_end_priority.png",
+    "options": ["Priority road starts", "End of priority road", "No priority", "Yield ahead"],
+    "correctIndex": 1,
+    "explanation": "Diagonal line through priority sign means the priority road has ended. Be prepared to yield at next intersection.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 30,
+    "category": "international_road_signs",
+    "questionText": "This sign shows speed limit 70. What is the maximum allowed speed?",
+    "imagePath": "assets/images/road_signs/sing_speed_70.png",
+    "options": ["70 mph", "70 km/h maximum", "70 meters", "Minimum 70"],
+    "correctIndex": 1,
+    "explanation": "Red circle with number 70 indicates maximum speed limit of 70 km/h. Do not exceed this speed.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 31,
+    "category": "right_of_way_priority",
+    "questionText": "At a 4-way intersection with no signs or signals, who has right of way?",
+    "imagePath": null,
+    "options": ["The largest vehicle", "The vehicle on the right", "The first vehicle to arrive", "The fastest vehicle"],
+    "correctIndex": 1,
+    "explanation": "In most countries, when there are no signs, the vehicle approaching from your RIGHT has priority. Always yield to the right.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "category": "right_of_way_priority",
+    "questionText": "You're turning left at an intersection. Who must you yield to?",
+    "imagePath": null,
+    "options": ["Only vehicles on your left", "Oncoming traffic and pedestrians", "No one - you have priority", "Only emergency vehicles"],
+    "correctIndex": 1,
+    "explanation": "When turning left, you must always yield to oncoming straight traffic AND any pedestrians crossing your path.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 33,
+    "category": "right_of_way_priority",
+    "questionText": "In a roundabout, who has the right of way?",
+    "imagePath": null,
+    "options": ["Vehicles entering", "Vehicles already in the circle", "Largest vehicles", "Emergency vehicles only"],
+    "correctIndex": 1,
+    "explanation": "Traffic already circulating in the roundabout ALWAYS has priority. Entering vehicles must yield and wait for a gap.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 34,
+    "category": "lane_markings",
+    "questionText": "What does a solid white line on your side paired with a dashed line on the other side mean?",
+    "imagePath": null,
+    "options": ["You can pass anytime", "You cannot cross, but oncoming traffic can", "Emergency lane", "Parking allowed"],
+    "correctIndex": 1,
+    "explanation": "Solid line on YOUR side = you cannot cross/pass. Dashed line on the OTHER side = they can pass. Different rules for each direction.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 35,
+    "category": "lane_markings",
+    "questionText": "Double solid yellow or white lines in the center mean:",
+    "imagePath": null,
+    "options": ["Passing zone", "No passing for either direction", "Two-way traffic", "Carpool lane"],
+    "correctIndex": 1,
+    "explanation": "Double solid center lines mean absolutely NO passing or crossing for traffic in EITHER direction. Stay in your lane.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 36,
+    "category": "speed_safe_driving",
+    "questionText": "What is the minimum safe following distance in good weather conditions?",
+    "imagePath": null,
+    "options": ["1 car length", "2-3 seconds behind", "10 meters", "As close as possible"],
+    "correctIndex": 1,
+    "explanation": "The '2-3 second rule': Pick a fixed point, when the car ahead passes it, you should pass it 2-3 seconds later. This gives reaction time.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 37,
+    "category": "speed_safe_driving",
+    "questionText": "In wet or icy conditions, you should increase following distance to:",
+    "imagePath": null,
+    "options": ["Same as normal", "4-6 seconds or more", "1 second", "Doesn't matter"],
+    "correctIndex": 1,
+    "explanation": "Poor conditions (rain/ice/snow) DOUBLE or TRIPLE your stopping distance. Increase following time to 4-6+ seconds for safety.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 38,
+    "category": "parking",
+    "questionText": "When parking on a hill facing upward (no curb), which way should you turn your wheels?",
+    "imagePath": null,
+    "options": ["Straight ahead", "Toward the road edge", "Away from the road edge", "Doesn't matter"],
+    "correctIndex": 1,
+    "explanation": "Uphill with NO curb: turn wheels TOWARD the road edge (right). If the car rolls back, it goes off the road, not into traffic.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 39,
+    "category": "parking",
+    "questionText": "When parking downhill, which direction should you turn your wheels?",
+    "imagePath": null,
+    "options": ["Straight", "Toward the curb", "Away from curb", "Left always"],
+    "correctIndex": 1,
+    "explanation": "Downhill: turn wheels TOWARD the curb. If the car rolls forward, the curb will stop it from rolling into traffic.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "category": "emergency_hazards",
+    "questionText": "If your brakes fail while driving, what should you do FIRST?",
+    "imagePath": null,
+    "options": ["Pull emergency brake hard", "Pump the brake pedal rapidly", "Turn off engine", "Jump out"],
+    "correctIndex": 1,
+    "explanation": "First: PUMP the brake pedal rapidly - this can build pressure in hydraulic systems. Then downshift, use emergency brake gradually.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 41,
+    "category": "emergency_hazards",
+    "questionText": "You're approaching a yellow (amber) traffic light. What should you do?",
+    "imagePath": null,
+    "options": ["Speed up to make it", "Stop if safe to do so", "Always stop immediately", "Ignore it"],
+    "correctIndex": 1,
+    "explanation": "Yellow/amber means 'prepare to stop'. Stop if you can do so SAFELY. Only proceed if stopping would be dangerous (too close, sudden braking risk).",
+    "difficulty": "medium"
+  },
+  {
+    "id": 42,
+    "category": "pedestrian_bicycle",
+    "questionText": "When a pedestrian is crossing at a marked crosswalk, you must:",
+    "imagePath": null,
+    "options": ["Honk to warn them", "Stop and yield completely", "Slow down only", "Pass quickly before they reach your lane"],
+    "correctIndex": 1,
+    "explanation": "Pedestrians at marked crosswalks ALWAYS have absolute right of way. You must stop completely and let them cross safely.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 43,
+    "category": "pedestrian_bicycle",
+    "questionText": "When passing a cyclist, what is the minimum safe distance?",
+    "imagePath": null,
+    "options": ["No minimum", "At least 1 meter (3 feet)", "10 cm", "Half a lane"],
+    "correctIndex": 1,
+    "explanation": "Always give cyclists AT LEAST 1 meter (3 feet) of space when passing. Cyclists can swerve due to potholes, wind, or obstacles.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 44,
+    "category": "vehicle_maintenance",
+    "questionText": "How often should you check your tire pressure?",
+    "imagePath": null,
+    "options": ["Once a year", "Monthly or before long trips", "Only when flat", "Never needed"],
+    "correctIndex": 1,
+    "explanation": "Check tire pressure AT LEAST monthly and before long trips. Proper pressure improves safety, fuel efficiency, and tire life.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 45,
+    "category": "vehicle_maintenance",
+    "questionText": "What does it mean if your oil pressure warning light comes on while driving?",
+    "imagePath": null,
+    "options": ["Time for oil change soon", "Critical - stop immediately", "Check oil next week", "Normal operation"],
+    "correctIndex": 1,
+    "explanation": "Oil pressure warning = CRITICAL. Stop immediately and turn off engine. Driving without oil pressure destroys the engine in minutes.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 46,
+    "category": "weather_conditions",
+    "questionText": "What should you do if you encounter heavy fog?",
+    "imagePath": null,
+    "options": ["Use high beams", "Use low beams and fog lights", "Turn off all lights", "Use hazard lights while driving"],
+    "correctIndex": 1,
+    "explanation": "In fog: use LOW beams (high beams reflect off fog and blind you) and fog lights. Reduce speed and increase following distance.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 47,
+    "category": "weather_conditions",
+    "questionText": "If your car starts to hydroplane on wet roads, you should:",
+    "imagePath": null,
+    "options": ["Brake hard immediately", "Ease off gas, steer straight, don't brake", "Accelerate to regain control", "Turn steering wheel rapidly"],
+    "correctIndex": 1,
+    "explanation": "Hydroplaning: Ease off gas gently, keep steering straight, DON'T brake suddenly. Wait for tires to regain traction naturally.",
+    "difficulty": "hard"
+  },
+  {
+    "id": 48,
+    "category": "distracted_impaired",
+    "questionText": "Using a handheld phone while driving:",
+    "imagePath": null,
+    "options": ["Is safe if brief", "Is illegal in most places and very dangerous", "Only dangerous at high speeds", "Fine if using speakerphone"],
+    "correctIndex": 1,
+    "explanation": "Handheld phone use is illegal in most jurisdictions and increases crash risk 4x. Even 'brief' use takes eyes off road for crucial seconds.",
+    "difficulty": "easy"
+  },
+  {
+    "id": 49,
+    "category": "distracted_impaired",
+    "questionText": "After drinking alcohol, when is it safe to drive?",
+    "imagePath": null,
+    "options": ["After 1 hour per drink", "After coffee", "When you feel fine", "Only when blood alcohol is below legal limit"],
+    "correctIndex": 3,
+    "explanation": "The ONLY safe answer is when your blood alcohol is below the legal limit (usually 0.05-0.08%). 'Feeling fine' is unreliable. Wait it out or use alternate transport.",
+    "difficulty": "medium"
+  },
+  {
+    "id": 50,
+    "category": "distracted_impaired",
+    "questionText": "Fatigue/drowsy driving is:",
+    "imagePath": null,
+    "options": ["Not a real concern", "As dangerous as drunk driving", "Only affects night drivers", "Fine with coffee"],
+    "correctIndex": 1,
+    "explanation": "Drowsy driving is as dangerous as drunk driving - reaction time slows, attention lapses. If tired, STOP and rest. Coffee is temporary, not a solution.",
+    "difficulty": "medium"
+  }
+]

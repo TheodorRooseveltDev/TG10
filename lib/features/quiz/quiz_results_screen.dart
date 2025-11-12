@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_typography.dart';
+import '../../core/utils/responsive_utils.dart';
 
 class QuizResultsScreen extends ConsumerWidget {
   final int totalQuestions;
@@ -25,17 +26,19 @@ class QuizResultsScreen extends ConsumerWidget {
     final accuracyPercent = (correctAnswers / totalQuestions * 100).round();
     final isPassed = accuracyPercent >= 70;
 
-    return Scaffold(
+    return ResponsiveScaffold(
       backgroundColor: AppColors.primaryDark,
-      body: Stack(
-        children: [
-          Positioned.fill(
-            child: Image.asset(
-              'assets/images/backgrounds/road_background_subtle.png',
-              fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(color: AppColors.primaryDark),
+      child: Scaffold(
+        backgroundColor: AppColors.primaryDark,
+        body: Stack(
+          children: [
+            Positioned.fill(
+              child: Image.asset(
+                'assets/images/backgrounds/road_background_subtle.png',
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => Container(color: AppColors.primaryDark),
+              ),
             ),
-          ),
           SafeArea(
             child: Column(
               children: [
@@ -62,6 +65,7 @@ class QuizResultsScreen extends ConsumerWidget {
           ),
         ],
       ),
+    ),
     );
   }
 

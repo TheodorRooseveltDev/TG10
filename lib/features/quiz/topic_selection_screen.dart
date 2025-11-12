@@ -5,6 +5,7 @@ import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_typography.dart';
 import '../../core/constants/app_constants.dart';
 import '../../core/providers/statistics_provider.dart';
+import '../../core/utils/responsive_utils.dart';
 import 'quiz_screen.dart';
 
 class TopicSelectionScreen extends ConsumerWidget {
@@ -14,17 +15,19 @@ class TopicSelectionScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final statsAsync = ref.watch(statisticsProvider);
 
-    return Scaffold(
+    return ResponsiveScaffold(
       backgroundColor: AppColors.primaryDark,
-      appBar: AppBar(
-        backgroundColor: AppColors.surface,
-        elevation: 0,
-        title: Text('Choose Your Topic', style: AppTypography.h2.copyWith(color: AppColors.textPrimary)),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-          onPressed: () => Navigator.pop(context),
+      child: Scaffold(
+        backgroundColor: AppColors.primaryDark,
+        appBar: AppBar(
+          backgroundColor: AppColors.surface,
+          elevation: 0,
+          title: Text('Choose Your Topic', style: AppTypography.h2.copyWith(color: AppColors.textPrimary)),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+            onPressed: () => Navigator.pop(context),
+          ),
         ),
-      ),
       body: Stack(
         children: [
           Positioned.fill(
@@ -43,6 +46,7 @@ class TopicSelectionScreen extends ConsumerWidget {
           ),
         ],
       ),
+    ),
     );
   }
 

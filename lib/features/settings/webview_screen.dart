@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_typography.dart';
+import '../../core/utils/responsive_utils.dart';
 
 class WebViewScreen extends StatefulWidget {
   final String url;
@@ -23,14 +24,16 @@ class _WebViewScreenState extends State<WebViewScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return ResponsiveScaffold(
       backgroundColor: AppColors.primaryDark,
-      appBar: AppBar(
-        backgroundColor: AppColors.surface,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-          onPressed: () => Navigator.pop(context),
-        ),
+      child: Scaffold(
+        backgroundColor: AppColors.primaryDark,
+        appBar: AppBar(
+          backgroundColor: AppColors.surface,
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+            onPressed: () => Navigator.pop(context),
+          ),
         title: Text(
           widget.title,
           style: AppTypography.h3.copyWith(color: AppColors.textPrimary),
@@ -96,6 +99,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
           ),
         ],
       ),
+    ),
     );
   }
 }

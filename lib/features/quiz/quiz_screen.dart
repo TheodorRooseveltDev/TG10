@@ -9,6 +9,7 @@ import '../../core/providers/database_provider.dart';
 import '../../core/providers/statistics_provider.dart';
 import '../../core/providers/streak_provider.dart';
 import '../../core/services/haptics_service.dart';
+import '../../core/utils/responsive_utils.dart';
 import 'quiz_results_screen.dart';
 
 class QuizScreen extends ConsumerStatefulWidget {
@@ -133,29 +134,34 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     if (_questions.isEmpty) {
-      return Scaffold(
+      return ResponsiveScaffold(
         backgroundColor: AppColors.primaryDark,
-        body: const Center(child: CircularProgressIndicator()),
+        child: Scaffold(
+          backgroundColor: AppColors.primaryDark,
+          body: const Center(child: CircularProgressIndicator()),
+        ),
       );
     }
 
     final currentQuestion = _questions[_currentQuestionIndex];
     final isCorrect = _answerSubmitted && _selectedAnswerIndex == currentQuestion.correctIndex;
 
-    return Scaffold(
+    return ResponsiveScaffold(
       backgroundColor: AppColors.primaryDark,
-      appBar: AppBar(
-        backgroundColor: AppColors.surface,
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.close, color: AppColors.textPrimary),
-          onPressed: () => _showExitDialog(),
+      child: Scaffold(
+        backgroundColor: AppColors.primaryDark,
+        appBar: AppBar(
+          backgroundColor: AppColors.surface,
+          elevation: 0,
+          leading: IconButton(
+            icon: const Icon(Icons.close, color: AppColors.textPrimary),
+            onPressed: () => _showExitDialog(),
+          ),
+          title: Text(
+            'Question ${_currentQuestionIndex + 1}/${_questions.length}',
+            style: AppTypography.h3.copyWith(color: AppColors.textPrimary),
+          ),
         ),
-        title: Text(
-          'Question ${_currentQuestionIndex + 1}/${_questions.length}',
-          style: AppTypography.h3.copyWith(color: AppColors.textPrimary),
-        ),
-      ),
       body: Stack(
         children: [
           Positioned.fill(
@@ -200,6 +206,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           ),
         ],
       ),
+    ),
     );
   }
 

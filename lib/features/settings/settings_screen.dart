@@ -5,6 +5,7 @@ import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_typography.dart';
 import '../../core/providers/settings_provider.dart';
 import '../../core/providers/database_provider.dart';
+import '../../core/utils/responsive_utils.dart';
 import '../splash/splash_screen.dart';
 import 'webview_screen.dart';
 
@@ -106,19 +107,24 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return Scaffold(
+      return ResponsiveScaffold(
         backgroundColor: AppColors.primaryDark,
-        appBar: AppBar(
-          backgroundColor: AppColors.surface,
-          title: Text('Settings', style: AppTypography.h2.copyWith(color: AppColors.textPrimary)),
+        child: Scaffold(
+          backgroundColor: AppColors.primaryDark,
+          appBar: AppBar(
+            backgroundColor: AppColors.surface,
+            title: Text('Settings', style: AppTypography.h2.copyWith(color: AppColors.textPrimary)),
+          ),
+          body: const Center(child: CircularProgressIndicator()),
         ),
-        body: const Center(child: CircularProgressIndicator()),
       );
     }
 
-    return Scaffold(
+    return ResponsiveScaffold(
       backgroundColor: AppColors.primaryDark,
-      appBar: AppBar(
+      child: Scaffold(
+        backgroundColor: AppColors.primaryDark,
+        appBar: AppBar(
         backgroundColor: AppColors.surface,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
@@ -194,6 +200,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           const SizedBox(height: AppSpacing.xxl),
         ],
       ),
+    ),
     );
   }
 

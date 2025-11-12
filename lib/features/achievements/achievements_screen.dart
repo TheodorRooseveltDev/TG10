@@ -5,6 +5,7 @@ import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_typography.dart';
 import '../../core/models/achievement.dart';
 import '../../core/providers/achievements_provider.dart';
+import '../../core/utils/responsive_utils.dart';
 
 class AchievementsScreen extends ConsumerWidget {
   const AchievementsScreen({super.key});
@@ -13,19 +14,21 @@ class AchievementsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final achievementsAsync = ref.watch(achievementsProvider);
 
-    return Scaffold(
+    return ResponsiveScaffold(
       backgroundColor: AppColors.primaryDark,
-      appBar: AppBar(
-        backgroundColor: AppColors.surface,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-          onPressed: () => Navigator.pop(context),
+      child: Scaffold(
+        backgroundColor: AppColors.primaryDark,
+        appBar: AppBar(
+          backgroundColor: AppColors.surface,
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+            onPressed: () => Navigator.pop(context),
+          ),
+          title: Text(
+            'Achievements',
+            style: AppTypography.h2.copyWith(color: AppColors.textPrimary),
+          ),
         ),
-        title: Text(
-          'Achievements',
-          style: AppTypography.h2.copyWith(color: AppColors.textPrimary),
-        ),
-      ),
       body: achievementsAsync.when(
         data: (achievements) {
           final unlockedCount = achievements.where((a) => a.isUnlocked).length;
@@ -144,6 +147,7 @@ class AchievementsScreen extends ConsumerWidget {
           ),
         ),
       ),
+    ),
     );
   }
 

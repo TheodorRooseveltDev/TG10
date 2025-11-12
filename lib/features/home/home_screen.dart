@@ -5,6 +5,7 @@ import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_typography.dart';
 import '../../core/providers/statistics_provider.dart';
 import '../../core/providers/streak_provider.dart';
+import '../../core/utils/responsive_utils.dart';
 import '../quiz/topic_selection_screen.dart';
 import '../quiz/exam_mode_screen.dart';
 import '../settings/settings_screen.dart';
@@ -19,17 +20,19 @@ class HomeScreen extends ConsumerWidget {
     final statsAsync = ref.watch(statisticsProvider);
     final streakAsync = ref.watch(currentStreakProvider);
 
-    return Scaffold(
+    return ResponsiveScaffold(
       backgroundColor: AppColors.primaryDark,
-      body: Stack(
-        children: [
-          Positioned.fill(
-            child: Image.asset(
-              'assets/images/backgrounds/road_background_subtle.png',
-              fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(color: AppColors.primaryDark),
+      child: Scaffold(
+        backgroundColor: AppColors.primaryDark,
+        body: Stack(
+          children: [
+            Positioned.fill(
+              child: Image.asset(
+                'assets/images/backgrounds/road_background_subtle.png',
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => Container(color: AppColors.primaryDark),
+              ),
             ),
-          ),
           SafeArea(
             child: CustomScrollView(
               slivers: [
@@ -54,6 +57,7 @@ class HomeScreen extends ConsumerWidget {
           ),
         ],
       ),
+    ),
     );
   }
 

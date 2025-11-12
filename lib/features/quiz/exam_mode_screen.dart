@@ -11,6 +11,7 @@ import '../../core/providers/statistics_provider.dart';
 import '../../core/providers/streak_provider.dart';
 import '../../core/constants/app_constants.dart';
 import '../../core/services/haptics_service.dart';
+import '../../core/utils/responsive_utils.dart';
 import 'exam_results_screen.dart';
 
 class ExamModeScreen extends ConsumerStatefulWidget {
@@ -154,9 +155,12 @@ class _ExamModeScreenState extends ConsumerState<ExamModeScreen> {
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return Scaffold(
+      return ResponsiveScaffold(
         backgroundColor: AppColors.primaryDark,
-        body: const Center(child: CircularProgressIndicator()),
+        child: Scaffold(
+          backgroundColor: AppColors.primaryDark,
+          body: const Center(child: CircularProgressIndicator()),
+        ),
       );
     }
 
@@ -168,15 +172,17 @@ class _ExamModeScreenState extends ConsumerState<ExamModeScreen> {
         _showExitDialog();
         return false;
       },
-      child: Scaffold(
+      child: ResponsiveScaffold(
         backgroundColor: AppColors.primaryDark,
-        appBar: AppBar(
-          backgroundColor: AppColors.surface,
-          elevation: 0,
-          leading: IconButton(
-            icon: const Icon(Icons.close, color: AppColors.textPrimary),
-            onPressed: () => _showExitDialog(),
-          ),
+        child: Scaffold(
+          backgroundColor: AppColors.primaryDark,
+          appBar: AppBar(
+            backgroundColor: AppColors.surface,
+            elevation: 0,
+            leading: IconButton(
+              icon: const Icon(Icons.close, color: AppColors.textPrimary),
+              onPressed: () => _showExitDialog(),
+            ),
           title: Text(
             'Exam Mode',
             style: AppTypography.h3.copyWith(color: AppColors.textPrimary),
@@ -253,6 +259,7 @@ class _ExamModeScreenState extends ConsumerState<ExamModeScreen> {
           ],
         ),
       ),
+    ),
     );
   }
 

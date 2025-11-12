@@ -6,6 +6,7 @@ import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_typography.dart';
 import '../../core/providers/database_provider.dart';
 import '../../core/models/user_progress.dart';
+import '../../core/utils/responsive_utils.dart';
 
 class AnalyticsScreen extends ConsumerStatefulWidget {
   const AnalyticsScreen({super.key});
@@ -20,18 +21,20 @@ class _AnalyticsScreenState extends ConsumerState<AnalyticsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return ResponsiveScaffold(
       backgroundColor: AppColors.primaryDark,
-      body: CustomScrollView(
-        slivers: [
-          // App Bar
-          SliverAppBar(
-            floating: true,
-            backgroundColor: AppColors.primaryDark,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-              onPressed: () => Navigator.pop(context),
-            ),
+      child: Scaffold(
+        backgroundColor: AppColors.primaryDark,
+        body: CustomScrollView(
+          slivers: [
+            // App Bar
+            SliverAppBar(
+              floating: true,
+              backgroundColor: AppColors.primaryDark,
+              leading: IconButton(
+                icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+                onPressed: () => Navigator.pop(context),
+              ),
             title: Text(
               'Analytics',
               style: AppTypography.h2.copyWith(
@@ -99,6 +102,7 @@ class _AnalyticsScreenState extends ConsumerState<AnalyticsScreen> {
           ),
         ],
       ),
+    ),
     );
   }
 

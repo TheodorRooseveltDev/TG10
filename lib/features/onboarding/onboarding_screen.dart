@@ -5,6 +5,7 @@ import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_typography.dart';
 import '../../core/providers/settings_provider.dart';
 import '../../core/providers/database_provider.dart';
+import '../../core/utils/responsive_utils.dart';
 import '../home/home_screen.dart';
 
 class OnboardingScreen extends ConsumerStatefulWidget {
@@ -87,25 +88,27 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return ResponsiveScaffold(
       backgroundColor: AppColors.primaryDark,
-      body: Stack(
-        children: [
-          // Background gradient
-          Positioned.fill(
-            child: Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    AppColors.primaryDark,
-                    AppColors.surface,
-                  ],
+      child: Scaffold(
+        backgroundColor: AppColors.primaryDark,
+        body: Stack(
+          children: [
+            // Background gradient
+            Positioned.fill(
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      AppColors.primaryDark,
+                      AppColors.surface,
+                    ],
+                  ),
                 ),
               ),
             ),
-          ),
           
           // PageView
           PageView.builder(
@@ -184,63 +187,71 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
           ),
         ],
       ),
+    ),
     );
   }
 
   Widget _buildPage(OnboardingPage page) {
-    return Padding(
-      padding: const EdgeInsets.all(AppSpacing.xl),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Spacer(),
-          
-          // Mascot image
-          Image.asset(
-            page.image,
-            width: 250,
-            height: 250,
-            errorBuilder: (_, __, ___) => Container(
-              width: 250,
-              height: 250,
-              decoration: BoxDecoration(
-                color: AppColors.secondaryYellow,
-                shape: BoxShape.circle,
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.all(AppSpacing.xl),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+            minHeight: MediaQuery.of(context).size.height - 200,
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const SizedBox(height: AppSpacing.xxl),
+              
+              // Mascot image
+              Image.asset(
+                page.image,
+                width: 200,
+                height: 200,
+                errorBuilder: (_, __, ___) => Container(
+                  width: 200,
+                  height: 200,
+                  decoration: BoxDecoration(
+                    color: AppColors.secondaryYellow,
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.directions_car,
+                    size: 100,
+                    color: Colors.white,
+                  ),
+                ),
               ),
-              child: const Icon(
-                Icons.directions_car,
-                size: 120,
-                color: Colors.white,
+              
+              const SizedBox(height: AppSpacing.xl),
+              
+              // Title
+              Text(
+                page.title,
+                style: AppTypography.h1.copyWith(
+                  color: AppColors.textPrimary,
+                  fontSize: 28,
+                ),
+                textAlign: TextAlign.center,
               ),
-            ),
+              
+              const SizedBox(height: AppSpacing.md),
+              
+              // Description
+              Text(
+                page.description,
+                style: AppTypography.bodyLarge.copyWith(
+                  color: AppColors.textSecondary,
+                  height: 1.5,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              
+              const SizedBox(height: AppSpacing.xxl),
+            ],
           ),
-          
-          const SizedBox(height: AppSpacing.xxl),
-          
-          // Title
-          Text(
-            page.title,
-            style: AppTypography.h1.copyWith(
-              color: AppColors.textPrimary,
-              fontSize: 32,
-            ),
-            textAlign: TextAlign.center,
-          ),
-          
-          const SizedBox(height: AppSpacing.lg),
-          
-          // Description
-          Text(
-            page.description,
-            style: AppTypography.bodyLarge.copyWith(
-              color: AppColors.textSecondary,
-              height: 1.6,
-            ),
-            textAlign: TextAlign.center,
-          ),
-          
-          const Spacer(flex: 2),
-        ],
+        ),
       ),
     );
   }
@@ -260,98 +271,100 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   }
 
   Widget _buildSettingsPage() {
-    return Padding(
-      padding: const EdgeInsets.all(AppSpacing.xl),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Spacer(),
-          
-          // Chicky celebrate
-          Image.asset(
-            'assets/images/mascot/chicky_celebrate.png',
-            width: 200,
-            height: 200,
-            errorBuilder: (_, __, ___) => Container(
-              width: 200,
-              height: 200,
-              decoration: BoxDecoration(
-                color: AppColors.secondaryYellow,
-                shape: BoxShape.circle,
-              ),
-              child: const Icon(Icons.celebration, size: 100, color: Colors.white),
-            ),
-          ),
-          
-          const SizedBox(height: AppSpacing.xl),
-          
-          Text(
-            'Almost There!',
-            style: AppTypography.h1.copyWith(
-              color: AppColors.textPrimary,
-              fontSize: 32,
-            ),
-            textAlign: TextAlign.center,
-          ),
-          
-          const SizedBox(height: AppSpacing.md),
-          
-          Text(
-            'Tell us a bit about yourself',
-            style: AppTypography.bodyLarge.copyWith(
-              color: AppColors.textSecondary,
-            ),
-            textAlign: TextAlign.center,
-          ),
-          
-          const SizedBox(height: AppSpacing.xxl),
-          
-          // Age selector
-          Container(
-            padding: const EdgeInsets.all(AppSpacing.lg),
-            decoration: BoxDecoration(
-              color: AppColors.surface,
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: AppColors.textSecondary.withOpacity(0.2)),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Your Age',
-                  style: AppTypography.bodyMedium.copyWith(
-                    color: AppColors.textPrimary,
-                    fontWeight: FontWeight.w600,
-                  ),
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.all(AppSpacing.xl),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(height: AppSpacing.xxl),
+            
+            // Chicky celebrate
+            Image.asset(
+              'assets/images/mascot/chicky_celebrate.png',
+              width: 150,
+              height: 150,
+              errorBuilder: (_, __, ___) => Container(
+                width: 150,
+                height: 150,
+                decoration: BoxDecoration(
+                  color: AppColors.secondaryYellow,
+                  shape: BoxShape.circle,
                 ),
-                const SizedBox(height: AppSpacing.sm),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                child: const Icon(Icons.celebration, size: 80, color: Colors.white),
+              ),
+            ),
+              
+              const SizedBox(height: AppSpacing.lg),
+              
+              Text(
+                'Almost There!',
+                style: AppTypography.h1.copyWith(
+                  color: AppColors.textPrimary,
+                  fontSize: 28,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              
+              const SizedBox(height: AppSpacing.sm),
+              
+              Text(
+                'Tell us a bit about yourself',
+                style: AppTypography.bodyLarge.copyWith(
+                  color: AppColors.textSecondary,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              
+              const SizedBox(height: AppSpacing.xl),
+              
+              // Age selector
+              Container(
+                padding: const EdgeInsets.all(AppSpacing.md),
+                decoration: BoxDecoration(
+                  color: AppColors.surface,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: AppColors.textSecondary.withOpacity(0.2)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      '$_selectedAge years old',
-                      style: AppTypography.h3.copyWith(color: AppColors.secondaryYellow),
+                      'Your Age',
+                      style: AppTypography.bodyMedium.copyWith(
+                        color: AppColors.textPrimary,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
+                    const SizedBox(height: AppSpacing.sm),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        IconButton(
-                          onPressed: _selectedAge > 10 ? () {
-                            setState(() => _selectedAge--);
-                          } : null,
-                          icon: const Icon(Icons.remove_circle),
-                          color: AppColors.secondaryYellow,
+                        Text(
+                          '$_selectedAge years old',
+                          style: AppTypography.h3.copyWith(color: AppColors.secondaryYellow),
                         ),
-                        IconButton(
-                          onPressed: _selectedAge < 100 ? () {
-                            setState(() => _selectedAge++);
-                          } : null,
-                          icon: const Icon(Icons.add_circle),
-                          color: AppColors.secondaryYellow,
+                        Row(
+                          children: [
+                            IconButton(
+                              onPressed: _selectedAge > 10 ? () {
+                                setState(() => _selectedAge--);
+                              } : null,
+                              icon: const Icon(Icons.remove_circle),
+                              color: AppColors.secondaryYellow,
+                            ),
+                            IconButton(
+                              onPressed: _selectedAge < 100 ? () {
+                                setState(() => _selectedAge++);
+                              } : null,
+                              icon: const Icon(Icons.add_circle),
+                              color: AppColors.secondaryYellow,
+                            ),
+                          ],
                         ),
                       ],
                     ),
-                  ],
-                ),
               ],
             ),
           ),
@@ -390,9 +403,11 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             ),
           ),
           
-          const Spacer(flex: 2),
+          // Extra bottom padding so content doesn't hide behind page indicators and button
+          const SizedBox(height: 180),
         ],
       ),
+    ),
     );
   }
 

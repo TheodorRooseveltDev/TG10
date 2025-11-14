@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:onesignal_flutter/onesignal_flutter.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_typography.dart';
@@ -20,6 +22,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   int _selectedAge = 18;
   String _selectedDifficulty = 'medium';
   bool _isLoading = true;
+  bool _notificationsEnabled = false;
 
   @override
   void initState() {
@@ -29,11 +32,48 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
 
   Future<void> _loadSettings() async {
     final settings = await ref.read(settingsProvider.future);
+    final prefs = await SharedPreferences.getInstance();
     setState(() {
       _selectedAge = settings.userAge ?? 18;
       _selectedDifficulty = settings.preferredDifficulty;
+      _notificationsEnabled = prefs.getBool('notificationsEnabled') ?? false;
       _isLoading = false;
     });
+  }
+
+  Future<void> _toggleNotifications(bool value) async {
+    if (value) {
+      // Request OneSignal permission first when enabling notifications
+      try {
+        final permission = await OneSignal.Notifications.requestPermission(true);
+        // Only update state if permission was granted
+        if (permission == true) {
+          setState(() {
+            _notificationsEnabled = true;
+          });
+          final prefs = await SharedPreferences.getInstance();
+          await prefs.setBool('notificationsEnabled', true);
+        } else {
+          // Permission denied, keep switch off
+          setState(() {
+            _notificationsEnabled = false;
+          });
+        }
+      } catch (e) {
+        debugPrint('OneSignal permission request error: $e');
+        // On error, keep switch off
+        setState(() {
+          _notificationsEnabled = false;
+        });
+      }
+    } else {
+      // When disabling, just update state
+      setState(() {
+        _notificationsEnabled = false;
+      });
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('notificationsEnabled', false);
+    }
   }
 
   Future<void> _saveSettings() async {
@@ -149,6 +189,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           _buildAgeSelector(),
           const SizedBox(height: AppSpacing.md),
           _buildDifficultySelector(),
+          const SizedBox(height: AppSpacing.md),
+          _buildNotificationsSwitch(),
           
           const SizedBox(height: AppSpacing.xl),
           _buildSectionHeader('Legal'),
@@ -378,6 +420,66 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               color: AppColors.textPrimary,
               fontWeight: FontWeight.w600,
             ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildNotificationsSwitch() {
+    return Container(
+      padding: const EdgeInsets.all(AppSpacing.lg),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: AppColors.textSecondary.withOpacity(0.2)),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            child: Row(
+              children: [
+                Icon(
+                  Icons.notifications_outlined,
+                  color: AppColors.secondaryYellow,
+                  size: 24,
+                ),
+                const SizedBox(width: AppSpacing.md),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        'Notifications',
+                        style: AppTypography.bodyMedium.copyWith(
+                          color: AppColors.textPrimary,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Enable push notifications',
+                        style: AppTypography.caption.copyWith(
+                          color: AppColors.textSecondary,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: AppSpacing.sm),
+          Switch(
+            value: _notificationsEnabled,
+            onChanged: _toggleNotifications,
+            activeColor: AppColors.secondaryYellow,
+            activeTrackColor: AppColors.secondaryYellow.withOpacity(0.5),
+            inactiveThumbColor: AppColors.textSecondary,
+            inactiveTrackColor: AppColors.textSecondary.withOpacity(0.3),
           ),
         ],
       ),

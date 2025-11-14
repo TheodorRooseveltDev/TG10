@@ -77,6 +77,13 @@ dependencies:
   # Calendar/Date
   table_calendar: ^3.1.2
 
+  onesignal_flutter: ^5.3.4
+  appsflyer_sdk: ^6.14.3
+  http: ^1.2.2
+  app_tracking_transparency: ^2.0.6+1
+  advertising_id: ^2.7.1
+  app_settings: ^6.1.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

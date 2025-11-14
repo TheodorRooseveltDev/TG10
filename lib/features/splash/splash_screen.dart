@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'dart:async';
-import '../../core/providers/settings_provider.dart';
 import '../../core/providers/database_provider.dart';
-import '../onboarding/onboarding_screen.dart';
-import '../home/home_screen.dart';
 
 class SplashScreen extends ConsumerStatefulWidget {
   const SplashScreen({super.key});
@@ -23,38 +20,39 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
   @override
   void initState() {
     super.initState();
-    
+
     _controller = AnimationController(
       duration: const Duration(milliseconds: 2500),
       vsync: this,
     );
 
     // Chicky drives from left to center
-    _chickyAnimation = Tween<Offset>(
-      begin: const Offset(-1.5, 0),
-      end: const Offset(0, 0),
-    ).animate(CurvedAnimation(
-      parent: _controller,
-      curve: const Interval(0.0, 0.6, curve: Curves.easeOut),
-    ));
+    _chickyAnimation =
+        Tween<Offset>(
+          begin: const Offset(-1.5, 0),
+          end: const Offset(0, 0),
+        ).animate(
+          CurvedAnimation(
+            parent: _controller,
+            curve: const Interval(0.0, 0.6, curve: Curves.easeOut),
+          ),
+        );
 
     // Logo fades in
-    _fadeAnimation = Tween<double>(
-      begin: 0.0,
-      end: 1.0,
-    ).animate(CurvedAnimation(
-      parent: _controller,
-      curve: const Interval(0.4, 0.8, curve: Curves.easeIn),
-    ));
+    _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: const Interval(0.4, 0.8, curve: Curves.easeIn),
+      ),
+    );
 
     // Scale animation for Chicky
-    _scaleAnimation = Tween<double>(
-      begin: 0.8,
-      end: 1.0,
-    ).animate(CurvedAnimation(
-      parent: _controller,
-      curve: const Interval(0.0, 0.6, curve: Curves.elasticOut),
-    ));
+    _scaleAnimation = Tween<double>(begin: 0.8, end: 1.0).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: const Interval(0.0, 0.6, curve: Curves.elasticOut),
+      ),
+    );
 
     _initializeApp();
   }
@@ -66,34 +64,12 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
     } catch (e) {
       debugPrint('Database initialization error: $e');
     }
-    
+
     // Start animation
     _controller.forward();
-    
+
     // Wait for animation to complete
     await Future.delayed(const Duration(milliseconds: 2500));
-    
-    // Navigate to next screen
-    if (mounted) {
-      _navigateToNext();
-    }
-  }
-
-  void _navigateToNext() async {
-    // Wait for settings to load with fresh data
-    final settings = await ref.read(settingsProvider.future);
-    
-    print('🔥 SPLASH NAVIGATION: isFirstLaunch = ${settings.isFirstLaunch}');
-    
-    if (mounted) {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (_) => settings.isFirstLaunch 
-              ? const OnboardingScreen() 
-              : const HomeScreen(),
-        ),
-      );
-    }
   }
 
   @override
@@ -117,16 +93,13 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                   gradient: LinearGradient(
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
-                    colors: [
-                      const Color(0xFF1A1F2E),
-                      const Color(0xFF2C3E50),
-                    ],
+                    colors: [const Color(0xFF1A1F2E), const Color(0xFF2C3E50)],
                   ),
                 ),
               ),
             ),
           ),
-          
+
           // Dark overlay for better contrast
           Positioned.fill(
             child: Container(
@@ -142,7 +115,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
               ),
             ),
           ),
-          
+
           // Content centered vertically
           Center(
             child: Column(
@@ -189,9 +162,9 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                     ],
                   ),
                 ),
-                
+
                 const SizedBox(height: 60),
-                
+
                 // Animated Chicky driving in the center
                 SlideTransition(
                   position: _chickyAnimation,
@@ -217,9 +190,9 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                     ),
                   ),
                 ),
-                
+
                 const SizedBox(height: 60),
-                
+
                 // Loading indicator at bottom
                 FadeTransition(
                   opacity: _fadeAnimation,

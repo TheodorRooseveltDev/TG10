@@ -28,6 +28,10 @@
 	<true/>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>Turn on tracking so we can measure app performance and make informed improvements. Your data is anonymous.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to your camera to allow you to take photos for support requests.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photo library to allow you to select images for support requests.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIBackgroundModes</key>
@@ -49,5 +53,20 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1216537347192521</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>1216537347192521</string>
+	<key>FacebookClientToken</key>
+	<string>43a9d1809f14aebc0ab5aa9cfc2c6aa9</string>
+	<key>FacebookDisplayName</key>
+	<string>ChickRoad</string>
 </dict>
 </plist>

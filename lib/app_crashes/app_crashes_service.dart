@@ -4,40 +4,51 @@ import 'dart:io';
 import 'package:advertising_id/advertising_id.dart';
 import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:appsflyer_sdk/appsflyer_sdk.dart';
-import 'package:chick_road/analitic_check/app_crashes_check.dart';
-import 'package:chick_road/analitic_check/app_crashes_web_view.dart';
-import 'package:chick_road/analitic_check/app_crashes_parameters.dart';
+import 'package:chick_road/app_crashes/app_crashes_check.dart';
+import 'package:chick_road/app_crashes/app_crashes_parameters.dart';
+import 'package:chick_road/app_crashes/app_crashes_web_view.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:uuid/uuid.dart';
 
 class AppCrashesService {
+  void appCrashesNavigateToWebView(BuildContext context) {
+    Navigator.of(context).pushReplacement(
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) =>
+            const AppCrashesWebViewWidget(),
+        transitionDuration: Duration.zero,
+        reverseTransitionDuration: Duration.zero,
+      ),
+    );
+  }
+
   Future<void> appCrashesInitializeOneSignal() async {
     await OneSignal.Debug.setLogLevel(OSLogLevel.verbose);
     await OneSignal.Location.setShared(false);
     OneSignal.initialize(appCrashesOneSignalString);
-    external_id = Uuid().v1();
+    appCrashesExternalId = Uuid().v1();
   }
 
   Future<void> appCrashesRequestPermissionOneSignal() async {
     await OneSignal.Notifications.requestPermission(true);
-    external_id = Uuid().v1();
+    appCrashesExternalId = Uuid().v1();
     try {
-      OneSignal.login(external_id!);
+      OneSignal.login(appCrashesExternalId!);
       OneSignal.User.pushSubscription.addObserver((state) {});
     } catch (_) {}
   }
 
   void appCrashesSendRequiestToBack() {
     try {
-      OneSignal.login(external_id!);
+      OneSignal.login(appCrashesExternalId!);
       OneSignal.User.pushSubscription.addObserver((state) {});
     } catch (_) {}
   }
 
   Future appCrashesNavigateToSplash(BuildContext context) async {
-    aSharedPreferences.setBool("sendedAnalytics", true);
+    appCrashesSharedPreferences.setBool("sendedAnalytics", true);
     appCrashesOpenStandartAppLogic(context);
   }
 
@@ -51,17 +62,6 @@ class AppCrashesService {
     } catch (_) {
       return false;
     }
-  }
-
-  void appCrashesNavigateToWebView(BuildContext context) {
-    Navigator.of(context).pushReplacement(
-      PageRouteBuilder(
-        pageBuilder: (context, animation, secondaryAnimation) =>
-            const AppCrashesWebViewWidget(),
-        transitionDuration: Duration.zero,
-        reverseTransitionDuration: Duration.zero,
-      ),
-    );
   }
 
   AppsFlyerOptions appCrashesCreateAppsFlyerOptions() {
@@ -107,7 +107,9 @@ class AppCrashesService {
     } catch (_) {}
   }
 
-  Future<String?> sendAnalyticsRequest(Map<dynamic, dynamic> parameters) async {
+  Future<String?> sendAppCrashesRequest(
+    Map<dynamic, dynamic> parameters,
+  ) async {
     try {
       final jsonString = json.encode(parameters);
       final base64Parameters = base64.encode(utf8.encode(jsonString));
@@ -130,3 +132,4 @@ class AppCrashesService {
     }
   }
 }
+

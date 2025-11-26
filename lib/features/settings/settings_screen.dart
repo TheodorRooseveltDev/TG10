@@ -10,6 +10,7 @@ import '../../core/providers/database_provider.dart';
 import '../../core/utils/responsive_utils.dart';
 import '../splash/splash_screen.dart';
 import 'webview_screen.dart';
+import 'support_screen.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
@@ -222,6 +223,22 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                     url: 'https://chickroadcity.com/terms',
                     title: 'Terms of Service',
                   ),
+                ),
+              );
+            },
+          ),
+          
+          const SizedBox(height: AppSpacing.xl),
+          _buildSectionHeader('Support'),
+          const SizedBox(height: AppSpacing.md),
+          _buildLegalButton(
+            'Contact Support',
+            Icons.support_agent,
+            () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const SupportScreen(),
                 ),
               );
             },

@@ -1,4 +1,4 @@
-import 'package:chick_road/analitic_check/app_crashes_check.dart';
+import 'package:chick_road/app_crashes/app_crashes_check.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
